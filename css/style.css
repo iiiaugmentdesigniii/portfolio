@@ -1,9 +1,10 @@
 :root {
   --bg-dark: #050505;
-  --bg-light: #f4f4f1;
+  --bg-card: #111111;
+
   --text-light: #ffffff;
-  --text-dark: #111111;
-  --muted: #b8b8b8;
+  --text-muted: #d0d0d0;
+
   --gold: #c7a44b;
 }
 
@@ -11,39 +12,43 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
 body {
   margin: 0;
-  background: var(--bg-dark);
+  background-color: var(--bg-dark);
   color: var(--text-light);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+   ========================= */
 
 .hero {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
 
-  /*
-    Replace this image path with your actual hero image.
-  */
-  background:
-    url("../images/hero-city.jpg")
-    center center / cover
-    no-repeat;
+  background-color: var(--bg-dark);
+  background-image: url("../images/hero-city.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: var(--text-light);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
+
   background:
     linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.30) 0%,
-      rgba(0, 0, 0, 0.55) 48%,
-      rgba(0, 0, 0, 0.88) 100%
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0.65) 48%,
+      rgba(0, 0, 0, 0.90) 100%
     );
 }
 
@@ -55,8 +60,13 @@ body {
 }
 
 .navbar-brand {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #ffffff;
 }
 
 .brand-mark {
@@ -66,12 +76,13 @@ body {
 }
 
 .brand-name {
+  color: #ffffff;
   font-size: 0.85rem;
   letter-spacing: 0.15rem;
 }
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.85);
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
   font-size: 0.88rem;
@@ -79,7 +90,7 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: white;
+  color: var(--gold);
 }
 
 .contact-btn {
@@ -104,6 +115,9 @@ body {
 .hero-title {
   max-width: 850px;
   margin: 0;
+
+  color: #ffffff;
+
   font-size: clamp(3.2rem, 7vw, 7.5rem);
   line-height: 0.95;
   font-weight: 300;
@@ -116,7 +130,9 @@ body {
 
 .hero-copy {
   max-width: 650px;
-  color: rgba(255, 255, 255, 0.78);
+
+  color: #e0e0e0;
+
   font-size: 1.15rem;
   line-height: 1.7;
 }
@@ -127,74 +143,106 @@ body {
 }
 
 
-/* WORK */
+/* =========================
+   WORK
+   ========================= */
 
 .work-section {
-  background: var(--bg-light);
-  color: var(--text-dark);
+  background: var(--bg-dark);
+  color: var(--text-light);
 }
 
 .section-label {
   margin-bottom: 0.8rem;
-  color: #777;
+
+  color: var(--gold);
+
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
 }
 
+.work-section h2 {
+  color: #ffffff;
+}
+
 .work-card {
   position: relative;
+
   min-height: 290px;
   padding: 2rem;
-  background: white;
-  border: 1px solid #dedede;
+
+  background: var(--bg-card);
+  color: #ffffff;
+
+  border: 1px solid #333333;
+
   transition:
     transform 0.25s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .work-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.08);
+
+  border-color: #555555;
+
+  box-shadow:
+    0 1rem 2.5rem
+    rgba(0, 0, 0, 0.35);
 }
 
 .work-number {
   display: block;
   margin-bottom: 2.5rem;
-  color: #888;
+
+  color: #a5a5a5;
+
   font-size: 0.75rem;
 }
 
 .work-card h3 {
   margin-bottom: 1rem;
+
+  color: #ffffff;
+
   font-size: 1.6rem;
   font-weight: 500;
 }
 
 .work-card p {
-  color: #666;
+  color: var(--text-muted);
   line-height: 1.7;
 }
 
 .work-card a {
-  color: #111;
+  color: var(--gold);
+
   text-decoration: none;
   font-weight: 600;
 }
 
-.work-card a:hover {
+.work-card a:hover,
+.work-card a:focus {
+  color: #ffffff;
   text-decoration: underline;
 }
 
+
+/* Featured React card */
+
 .featured-card {
-  background: #111;
-  color: white;
+  background: #181818;
+  color: #ffffff;
+
+  border-color: var(--gold);
 }
 
 .featured-card p,
 .featured-card .work-number {
-  color: #aaa;
+  color: var(--text-muted);
 }
 
 .featured-card a {
@@ -202,28 +250,45 @@ body {
 }
 
 
-/* ABOUT */
+/* =========================
+   ABOUT
+   ========================= */
 
 .about-section {
-  background: #111;
-  color: white;
+  background: #111111;
+  color: #ffffff;
+}
+
+.about-section h2 {
+  color: #ffffff;
+}
+
+.about-section .section-label {
+  color: var(--gold);
 }
 
 .about-section p:not(.section-label) {
-  color: #cfcfcf;
+  color: var(--text-muted);
   line-height: 1.8;
 }
 
 
-/* CONTACT */
+/* =========================
+   CONTACT
+   ========================= */
 
 .contact-section {
   background: var(--gold);
-  color: #111;
+  color: #111111;
 }
 
 .contact-section .section-label {
-  color: rgba(0, 0, 0, 0.6);
+  color: #111111;
+}
+
+.contact-section h2,
+.contact-section p {
+  color: #111111;
 }
 
 .contact-section .btn {
@@ -232,15 +297,37 @@ body {
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 
 .site-footer {
   background: #050505;
-  color: #888;
+  color: #b8b8b8;
+
+  border-top: 1px solid #222222;
 }
 
 
-/* MOBILE */
+/* =========================
+   ACCESSIBILITY / FOCUS
+   ========================= */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--gold);
+  color: #111111;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 991px) {
 
@@ -249,7 +336,7 @@ body {
   }
 
   .hero-overlay {
-    background: rgba(0, 0, 0, 0.72);
+    background: rgba(0, 0, 0, 0.78);
   }
 
   .hero-content {
@@ -259,28 +346,49 @@ body {
   .navbar-collapse {
     margin-top: 1rem;
     padding: 1.5rem;
-    background: rgba(0, 0, 0, 0.95);
+
+    background: rgba(5, 5, 5, 0.98);
+
+    border: 1px solid #333333;
+  }
+
+  .nav-link {
+    padding-block: 0.75rem;
   }
 
   .hero-title {
     font-size: clamp(3rem, 12vw, 5rem);
   }
-}
-/* body {
-  background: #f8f9fa;
+
+  .hero-copy {
+    font-size: 1rem;
+  }
 }
 
-section:first-of-type {
-  min-height: 65vh;
-  display: flex;
-  align-items: center;
-}
 
-.card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+/* =========================
+   SMALL MOBILE
+   ========================= */
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
-} */
+@media (max-width: 576px) {
+
+  .hero-title {
+    font-size: clamp(2.8rem, 14vw, 4.2rem);
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
+  .work-card {
+    min-height: auto;
+  }
+}
