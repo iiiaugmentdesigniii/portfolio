@@ -1,0 +1,18 @@
+body {
+  background: #f8f9fa;
+}
+
+section:first-of-type {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
