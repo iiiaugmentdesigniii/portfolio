@@ -1,20 +1,22 @@
-const words = [
-{
-  word: "nostalgia",
-  definition: "A sentimental longing for the past.",
-  hints: ["memories", "past", "sentimental"]
-},
-{
-  word: "meticulous",
-  definition: "Showing great attention to detail.",
-  hints: ["careful", "precise", "thorough"]
-},
-{
-  word: "ambiguous",
-  definition: "Having more than one possible meaning.",
-  hints: ["unclear", "uncertain", "multiple meanings"]
-}
-];
+// const words = [
+// {
+//   word: "nostalgia",
+//   definition: "A sentimental longing for the past.",
+//   hints: ["memories", "past", "sentimental"]
+// },
+// {
+//   word: "meticulous",
+//   definition: "Showing great attention to detail.",
+//   hints: ["careful", "precise", "thorough"]
+// },
+// {
+//   word: "ambiguous",
+//   definition: "Having more than one possible meaning.",
+//   hints: ["unclear", "uncertain", "multiple meanings"]
+// }
+// ];
+
+let words = [];
 
 let currentWord;
 let score = 0;
@@ -44,6 +46,23 @@ guessInput.addEventListener("keydown", function (event) {
     checkGuess();
   }
 });
+
+async function loadWordsFromDatabase() {
+  const response = await fetch("/api/words");
+  const data = await response.json();
+
+  words = data.map(function(item) {
+    return {
+      word: item.word,
+      definition: item.definition,
+      hints: JSON.parse(item.hints)
+    };
+  });
+
+  loadRandomWord();
+
+}
+
 
 
 function loadRandomWord() {
@@ -86,7 +105,7 @@ function closeAddWordForm() {
   addWordForm.style.display = "none";
 }
 
-function saveNewWord() {
+async function saveNewWord() {
   const word = newWord.value.trim();
   const definition = newDefinition.value.trim();
 
@@ -100,22 +119,30 @@ function saveNewWord() {
     hints: hints,
   };
 
-  // words.push(wordObject);
-  await fetch("/api/words", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify(wordObject)
-});
+  const response = await fetch("/api/words", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(wordObject),
+  });
 
-  console.log(words);
+  const data = await response.json();
 
-  newWord.value = "";
-  newDefinition.value = "";
-  newHints.value = "";
+  if (data.success) {
+    // Add it to the current game without needing to refresh
+    words.push(wordObject);
 
-  addWordForm.style.display = "none";
+    console.log("Word saved:", wordObject);
+
+    newWord.value = "";
+    newDefinition.value = "";
+    newHints.value = "";
+
+    addWordForm.style.display = "none";
+  } else {
+    console.log("Word was not saved:", data.error);
+  }
 }
 
 guessButton.addEventListener("click", checkGuess);
@@ -126,4 +153,5 @@ addWordButton.addEventListener("click", openAddWordForm);
 cancelWordButton.addEventListener("click", closeAddWordForm);
 saveWordButton.addEventListener("click", saveNewWord);
 
-loadRandomWord();
+// loadRandomWord();
+loadWordsFromDatabase();
