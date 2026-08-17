@@ -1,10 +1,13 @@
 html,
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
   min-height: 100%;
 }
 
 body {
+  display: block !important;
   min-height: 100vh;
   font-family: Arial, sans-serif;
   background: #000000;
@@ -13,7 +16,9 @@ body {
 
 
 /* Keep portfolio navigation in normal page flow */
-
+header {
+  width: 100%;
+}
 
 header .navbar {
   position: relative;
@@ -34,6 +39,7 @@ main {
   align-items: center;
 
   padding: 60px 20px;
+  box-sizing: border-box;
 }
 
 /* Main game */
@@ -184,7 +190,11 @@ main {
 
 /* Footer stays below game */
 .site-footer {
+  display: block;
+  position: static;
+
   width: 100%;
+  clear: both;
 }
 
 
