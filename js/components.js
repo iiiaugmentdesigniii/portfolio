@@ -98,3 +98,16 @@
     </div>
   </div>
 </header>;
+
+
+  <footer class="site-footer py-4">
+
+    <div class="container text-center">
+
+      <small>
+        © 2026 iiiaugmentdesigniii
+      </small>
+
+    </div>
+
+  </footer>
