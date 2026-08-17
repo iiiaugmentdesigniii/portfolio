@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000000;
+  color: #e6e6e6;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  width: fit-content;
+  max-width: calc(100vw - 40px);
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  gap: 10px;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.word-card {
+  background: #000000;
+  color: #e6e6e6;
+  padding: 0;
+}
+
+.label {
+  font-size: 22px;
+  margin-bottom: 45px;
+}
+
+.add-word-form {
+  display: none;
+  margin-top: 25px;
+}
+
+.add-word-form input {
+  display: block;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.add-word-form h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+#definition {
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 55px;
+}
+
+#hintButton,
+#showButton {
+  background: #333333;
+  color: #d6d6d6;
+
+  border: 1px solid #555555;
+
+  font-size: 18px;
+  padding: 12px 18px;
+
+  cursor: pointer;
+}
+
+#hintText {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 300px;
+  padding: 14px;
+
+  font-size: 24px;
+
+  background: #ffffff;
+  color: #222222;
+
+  border: 2px solid #767676;
+  border-radius: 0;
+}
+
+input::placeholder {
+  color: #666666;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 12px;
+}
+
+#guessButton,
+#nextButton {
+  font-size: 24px;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000000;
+  color: #e6e6e6;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+}
+
+#definition {
+  font-size: 24px;
+  margin: 40px 0;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#result {
+  font-size: 22px;
+} */
