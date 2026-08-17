@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "compatibility_date": "2026-08-16",
+  "pages_build_output_dir": ".",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "word-game-db",
+      "database_id": "813932b9-eac7-4276-86bf-978c2a70bbbc",
+    },
+  ],
+}
