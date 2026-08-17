@@ -100,7 +100,15 @@ function saveNewWord() {
     hints: hints,
   };
 
-  words.push(wordObject);
+  // words.push(wordObject);
+  await fetch("/api/words", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(wordObject)
+});
+
   console.log(words);
 
   newWord.value = "";
