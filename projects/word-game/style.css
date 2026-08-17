@@ -9,17 +9,11 @@ body {
   font-family: Arial, sans-serif;
   background: #000000;
   color: #e6e6e6;
-
-  display: flex;
-  flex-direction: column;
 }
 
 
 /* Keep portfolio navigation in normal page flow */
 
-/* header {
-  width: 100%;
-} */
 
 header .navbar {
   position: relative;
@@ -30,17 +24,6 @@ header .navbar {
 
 /* Center the game between header and footer */
 
-/* main {
-  flex: 1;
-
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 50px 20px;
-} */
 /* Main word-game area */
 main {
   width: 100%;
@@ -198,11 +181,6 @@ main {
 
 
 /* Footer */
-
-/* .site-footer {
-  width: 100%;
-  margin-top: auto;
-} */
 
 /* Footer stays below game */
 .site-footer {
