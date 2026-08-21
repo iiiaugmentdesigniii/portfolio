@@ -1,9 +1,9 @@
 const header = `
-<header class="hero">
+<header class="site-header">
   <nav class="navbar navbar-expand-lg navbar-dark py-4">
     <div class="container-fluid px-4 px-lg-5">
 
-      <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+      <a class="navbar-brand d-flex align-items-center" href="/">
         <span class="brand-mark">III</span>
         <span class="brand-name ms-2">AUGMENT DESIGN</span>
       </a>
@@ -24,31 +24,31 @@ const header = `
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
 
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html#work">Work</a>
+            <a class="nav-link" href="/#work">Work</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html#web">Web</a>
+            <a class="nav-link" href="/#web">Web</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html#qa">QA</a>
+            <a class="nav-link" href="/#qa">QA</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html#design">Design</a>
+            <a class="nav-link" href="/#design">Design</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html#photo">Photo</a>
+            <a class="nav-link" href="/#photo">Photo</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html#about">About</a>
+            <a class="nav-link" href="/#about">About</a>
           </li>
 
           <li class="nav-item ms-lg-2">
-            <a class="btn btn-light contact-btn" href="../../index.html#contact">
+            <a class="btn btn-light contact-btn" href="/#contact">
               Contact
             </a>
           </li>
