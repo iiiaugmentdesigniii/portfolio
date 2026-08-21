@@ -1,0 +1,315 @@
+/* =========================
+   HOME PAGE
+   ========================= */
+
+.home-page {
+  background: #000000;
+  color: #ffffff;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.home-page .hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #000000;
+  color: #ffffff;
+}
+
+
+/* Navigation inside landing-page hero */
+
+.home-page .hero .navbar {
+  position: relative;
+  z-index: 10;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.home-page .hero .navbar-brand {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.home-page .hero .navbar-brand:hover,
+.home-page .hero .navbar-brand:focus {
+  color: #ffffff;
+}
+
+.home-page .hero .brand-mark {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.home-page .hero .brand-name {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.home-page .hero .nav-link {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.home-page .hero .nav-link:hover,
+.home-page .hero .nav-link:focus {
+  color: #ffffff;
+}
+
+.home-page .hero .contact-btn {
+  padding: 8px 18px;
+  border: 1px solid #777777;
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.home-page .hero .contact-btn:hover,
+.home-page .hero .contact-btn:focus {
+  background: #ffffff;
+  color: #000000;
+}
+
+
+/* Hero content */
+
+.home-page .hero-inner {
+  position: relative;
+  z-index: 2;
+
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+  padding-top: 85px;
+
+  text-align: center;
+}
+
+.home-page .hero-intro {
+  margin-bottom: 20px;
+
+  color: #d8d8d8;
+
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.home-page .hero-title {
+  max-width: 900px;
+  margin: 0 auto;
+
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.home-page .hero-title span {
+  display: block;
+  color: #a8a8a8;
+}
+
+.home-page .hero-copy {
+  max-width: 640px;
+  margin: 28px auto 0;
+
+  color: #b8b8b8;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.home-page .hero-button {
+  margin-top: 28px;
+  padding: 10px 22px;
+
+  border-color: #777777;
+}
+
+
+/* =========================
+   ABSTRACT HERO ART
+   ========================= */
+
+.home-page .hero-art {
+  position: relative;
+
+  width: min(600px, 90vw);
+  height: 340px;
+
+  margin: 25px auto 0;
+}
+
+.home-page .art-shape {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 430px;
+  height: 230px;
+
+  border: 1px solid rgba(120, 185, 255, 0.35);
+
+  background:
+    radial-gradient(
+      circle at 35% 40%,
+      rgba(90, 170, 255, 0.38),
+      rgba(10, 55, 105, 0.2) 35%,
+      rgba(0, 0, 0, 0) 68%
+    );
+
+  box-shadow:
+    inset 0 0 80px rgba(40, 120, 210, 0.25),
+    0 0 60px rgba(20, 80, 150, 0.15);
+
+  border-radius:
+    60% 40% 65% 35% /
+    45% 60% 40% 55%;
+
+  transform: translate(-50%, -50%) rotate(-8deg);
+
+  filter: blur(0.2px);
+}
+
+.home-page .art-shape-one {
+  transform:
+    translate(-52%, -50%)
+    rotate(-11deg)
+    skewX(-8deg);
+}
+
+.home-page .art-shape-two {
+  width: 380px;
+  height: 210px;
+
+  opacity: 0.55;
+
+  transform:
+    translate(-42%, -42%)
+    rotate(18deg)
+    skewX(15deg);
+}
+
+.home-page .art-glow {
+  position: absolute;
+
+  left: 50%;
+  top: 52%;
+
+  width: 280px;
+  height: 160px;
+
+  transform: translate(-50%, -50%);
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(65, 145, 230, 0.34),
+      rgba(0, 0, 0, 0) 70%
+    );
+
+  filter: blur(30px);
+}
+
+
+/* =========================
+   HOME CONTENT SECTIONS
+   ========================= */
+
+.home-page .work-section {
+  background: #0b0b0b;
+  color: #ffffff;
+}
+
+.home-page .about-section {
+  background: #111111;
+  color: #ffffff;
+}
+
+.home-page .contact-section {
+  background: #000000;
+  color: #ffffff;
+}
+
+.home-page .section-label {
+  color: #a8a8a8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+}
+
+.home-page .work-card {
+  padding: 28px;
+
+  background: #151515;
+  color: #ffffff;
+
+  border: 1px solid #2a2a2a;
+}
+
+.home-page .work-card h3 {
+  margin-top: 12px;
+}
+
+.home-page .work-card p {
+  color: #bcbcbc;
+}
+
+.home-page .work-card a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.home-page .work-card a:hover,
+.home-page .work-card a:focus {
+  text-decoration: underline;
+}
+
+.home-page .work-number {
+  color: #888888;
+  font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .home-page .hero {
+    min-height: 100vh;
+  }
+
+  .home-page .hero-inner {
+    padding-top: 60px;
+  }
+
+  .home-page .hero-title {
+    font-size: clamp(38px, 11vw, 56px);
+  }
+
+  .home-page .hero-copy {
+    font-size: 16px;
+  }
+
+  .home-page .hero-art {
+    height: 280px;
+    margin-top: 20px;
+  }
+
+  .home-page .art-shape {
+    width: 320px;
+    height: 190px;
+  }
+
+  .home-page .art-shape-two {
+    width: 290px;
+    height: 175px;
+  }
+}
