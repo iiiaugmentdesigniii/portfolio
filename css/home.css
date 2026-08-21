@@ -81,9 +81,11 @@
   position: relative;
   z-index: 2;
 
-  width: min(900px, calc(100% - 40px));
+  width: 100%;
+  max-width: 1000px;
+
   margin: 0 auto;
-  padding-top: 85px;
+  padding: 70px 32px 0;
 
   text-align: center;
 }
@@ -287,7 +289,7 @@
   }
 
   .home-page .hero-inner {
-    padding-top: 60px;
+    padding: 55px 20px 0;
   }
 
   .home-page .hero-title {
