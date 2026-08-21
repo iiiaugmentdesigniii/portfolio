@@ -13,25 +13,20 @@
     rel="stylesheet"
   >
 
-  <!-- Main portfolio CSS -->
+  <!-- Shared Site CSS -->
   <link rel="stylesheet" href="../../css/style.css">
-
-  <!-- Word game CSS -->
-  <link rel="stylesheet" href="style.css">
 </head>
 
+<body class="word-game-page">
 
-<body>
-
-<div id="site-header"></div>
-  
+  <!-- Shared Header -->
+  <div id="site-header"></div>
 
   <main>
 
     <div class="game">
 
       <!-- Score / Title -->
-
       <div class="top-bar">
 
         <span>
@@ -40,14 +35,12 @@
         </span>
 
         <span>
-          Guess the Word 12345
+          Guess the Word
         </span>
 
       </div>
 
-
       <!-- Definition -->
-
       <div class="word-card">
 
         <p id="definition">
@@ -56,14 +49,10 @@
 
       </div>
 
-
       <!-- Correct / Try Again -->
-
       <p id="result"></p>
 
-
       <!-- Answer Row -->
-
       <div class="answer-row">
 
         <input
@@ -73,45 +62,52 @@
           autocomplete="off"
         >
 
-        <button id="hintButton">
+        <button
+          id="hintButton"
+          type="button"
+        >
           HINT
         </button>
 
-        <button id="showButton">
+        <button
+          id="showButton"
+          type="button"
+        >
           SHOW WORD
         </button>
 
       </div>
 
-
       <!-- Hint -->
-
       <p id="hintText"></p>
 
-
       <!-- Game Buttons -->
-
       <div class="buttons">
 
-        <button id="guessButton">
+        <button
+          id="guessButton"
+          type="button"
+        >
           GUESS
         </button>
 
-        <button id="addWordButton">
+        <button
+          id="addWordButton"
+          type="button"
+        >
           + ADD WORD
         </button>
 
-        <button id="nextButton">
+        <button
+          id="nextButton"
+          type="button"
+        >
           NEXT
         </button>
 
       </div>
 
-
-      <!-- =========================
-           ADD WORD FORM
-      ========================== -->
-
+      <!-- Add Word Form -->
       <div
         id="addWordForm"
         class="add-word-form"
@@ -121,13 +117,11 @@
           Add New Word
         </h2>
 
-
         <input
           type="text"
           id="newWord"
           placeholder="Word"
         >
-
 
         <input
           type="text"
@@ -135,21 +129,25 @@
           placeholder="Definition"
         >
 
-
         <input
           type="text"
           id="newHints"
           placeholder="Hints: memory, past, sentimental"
         >
 
+        <div class="add-word-buttons">
 
-        <div>
-
-          <button id="saveWordButton">
+          <button
+            id="saveWordButton"
+            type="button"
+          >
             SAVE
           </button>
 
-          <button id="cancelWordButton">
+          <button
+            id="cancelWordButton"
+            type="button"
+          >
             CANCEL
           </button>
 
@@ -161,24 +159,20 @@
 
   </main>
 
-
-
-
+  <!-- Shared Footer -->
   <div id="site-footer"></div>
 
   <!-- Bootstrap JavaScript -->
-
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
   </script>
 
+  <!-- Shared Components -->
+  <script src="../../js/components.js"></script>
 
   <!-- Word Game JavaScript -->
-<script src="../../js/components.js"></script>
   <script src="game.js"></script>
-  
 
 </body>
 
 </html>
-
