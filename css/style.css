@@ -2,6 +2,10 @@
    GLOBAL
    ========================= */
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -12,23 +16,40 @@ body {
 
 body {
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   background: #000000;
   color: #e6e6e6;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
 
 /* =========================
-   SHARED HEADER
+   SHARED NAVIGATION
    ========================= */
 
 .site-header {
@@ -36,38 +57,119 @@ img {
   background: #111111;
 }
 
-.site-header .navbar {
+.site-nav {
+  position: relative;
+  z-index: 100;
+
   width: 100%;
+
   background: #111111;
 }
 
-.site-header .navbar-brand,
-.site-header .navbar-brand:hover,
-.site-header .navbar-brand:focus {
-  color: #ffffff;
+.nav-container {
+  width: min(1400px, calc(100% - 64px));
+
+  margin: 0 auto;
+  padding: 22px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.site-header .brand-mark {
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
   color: #ffffff;
+
+  text-decoration: none;
+}
+
+.brand-mark {
+  color: #ffffff;
+
   font-weight: 700;
+  letter-spacing: 2px;
 }
 
-.site-header .brand-name {
+.brand-name {
+  color: #ffffff;
+
+  font-size: 15px;
+  letter-spacing: 0.06em;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+}
+
+.nav-link {
+  color: #d0d0d0;
+
+  font-size: 14px;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
   color: #ffffff;
 }
 
-.site-header .nav-link {
+.nav-contact {
+  padding: 9px 18px;
+
+  border: 1px solid #777777;
+
   color: #ffffff;
+
+  font-size: 14px;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
-.site-header .nav-link:hover,
-.site-header .nav-link:focus {
-  color: #cccccc;
-}
-
-.site-header .contact-btn {
+.nav-contact:hover,
+.nav-contact:focus {
   background: #ffffff;
-  color: #111111;
+  color: #000000;
+}
+
+
+/* Hamburger */
+
+.nav-toggle {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 10px;
+
+  background: transparent;
+
+  border: 1px solid #555555;
+
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+
+  width: 100%;
+  height: 2px;
+
+  margin: 5px 0;
+
+  background: #ffffff;
 }
 
 
@@ -77,8 +179,19 @@ img {
 
 .site-footer {
   width: 100%;
+
+  padding: 28px 20px;
+
   background: #111111;
   color: #cccccc;
+}
+
+.footer-container {
+  width: min(1200px, 100%);
+
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 
@@ -91,6 +204,42 @@ button:focus-visible,
 input:focus-visible {
   outline: 3px solid #ffffff;
   outline-offset: 3px;
+}
+
+
+/* =========================
+   SHARED NAVIGATION MOBILE
+   ========================= */
+
+@media (max-width: 760px) {
+
+  .nav-container {
+    width: calc(100% - 32px);
+
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+
+    width: 100%;
+
+    padding: 22px 0 5px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 18px;
+  }
+
+  .nav-menu.is-open {
+    display: flex;
+  }
+
 }
 
 
@@ -183,6 +332,7 @@ input:focus-visible {
   border: 1px solid #555555;
 
   font-size: 18px;
+
   cursor: pointer;
 }
 
@@ -198,6 +348,7 @@ input:focus-visible {
 .word-game-page .buttons {
   display: flex;
   align-items: stretch;
+
   gap: 30px;
 
   margin-top: 12px;
@@ -208,11 +359,13 @@ input:focus-visible {
   padding: 14px 28px;
 
   font-size: 24px;
+
   cursor: pointer;
 }
 
 .word-game-page #addWordButton {
   padding: 10px 18px;
+
   cursor: pointer;
 }
 
@@ -250,6 +403,7 @@ input:focus-visible {
 
   .word-game-page main {
     align-items: flex-start;
+
     padding-top: 40px;
   }
 
@@ -267,6 +421,8 @@ input:focus-visible {
 
   .word-game-page .buttons {
     gap: 10px;
+
     flex-wrap: wrap;
   }
+
 }

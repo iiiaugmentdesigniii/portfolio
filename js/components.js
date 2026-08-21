@@ -1,83 +1,164 @@
 const header = `
 <header class="site-header">
-  <nav class="navbar navbar-expand-lg navbar-dark py-4">
-    <div class="container-fluid px-4 px-lg-5">
 
-      <a class="navbar-brand d-flex align-items-center" href="/">
+  <nav class="site-nav" aria-label="Main navigation">
+
+    <div class="nav-container">
+
+      <a class="site-brand" href="/">
         <span class="brand-mark">III</span>
-        <span class="brand-name ms-2">AUGMENT DESIGN</span>
+        <span class="brand-name">AUGMENT DESIGN</span>
       </a>
 
       <button
-        class="navbar-toggler"
+        class="nav-toggle"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-controls="mainNav"
         aria-expanded="false"
-        aria-label="Toggle navigation"
+        aria-controls="mainNav"
+        aria-label="Open navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+      <div class="nav-menu" id="mainNav">
 
-          <li class="nav-item">
-            <a class="nav-link" href="/#work">Work</a>
-          </li>
+        <a class="nav-link" href="/#work">
+          Work
+        </a>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/#web">Web</a>
-          </li>
+        <a class="nav-link" href="/#web">
+          Web
+        </a>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/#qa">QA</a>
-          </li>
+        <a class="nav-link" href="/#qa">
+          QA
+        </a>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/#design">Design</a>
-          </li>
+        <a class="nav-link" href="/#design">
+          Design
+        </a>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/#photo">Photo</a>
-          </li>
+        <a class="nav-link" href="/#photo">
+          Photo
+        </a>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/#about">About</a>
-          </li>
+        <a class="nav-link" href="/#about">
+          About
+        </a>
 
-          <li class="nav-item ms-lg-2">
-            <a class="btn btn-light contact-btn" href="/#contact">
-              Contact
-            </a>
-          </li>
+        <a class="nav-contact" href="/#contact">
+          Contact
+        </a>
 
-        </ul>
       </div>
 
     </div>
+
   </nav>
+
 </header>
 `;
 
+
 const footer = `
-<footer class="site-footer py-4">
-  <div class="container text-center">
+<footer class="site-footer">
+
+  <div class="footer-container">
+
     <small>
       © 2026 iiiaugmentdesigniii
     </small>
+
   </div>
+
 </footer>
 `;
 
-const headerContainer = document.getElementById("site-header");
-const footerContainer = document.getElementById("site-footer");
+
+const headerContainer =
+  document.getElementById("site-header");
+
+const footerContainer =
+  document.getElementById("site-footer");
+
 
 if (headerContainer) {
   headerContainer.innerHTML = header;
 }
 
+
 if (footerContainer) {
   footerContainer.innerHTML = footer;
 }
+
+
+/* =========================
+   MOBILE NAVIGATION
+   ========================= */
+
+function setupNavigation() {
+
+  const toggle =
+    document.querySelector(".nav-toggle");
+
+  const menu =
+    document.querySelector(".nav-menu");
+
+
+  if (!toggle || !menu) {
+    return;
+  }
+
+
+  toggle.addEventListener("click", () => {
+
+    const isOpen =
+      menu.classList.toggle("is-open");
+
+
+    toggle.setAttribute(
+      "aria-expanded",
+      isOpen
+    );
+
+
+    toggle.setAttribute(
+      "aria-label",
+      isOpen
+        ? "Close navigation"
+        : "Open navigation"
+    );
+
+  });
+
+
+  const links =
+    menu.querySelectorAll("a");
+
+
+  links.forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+      menu.classList.remove("is-open");
+
+      toggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+      toggle.setAttribute(
+        "aria-label",
+        "Open navigation"
+      );
+
+    });
+
+  });
+
+}
+
+
+setupNavigation();
