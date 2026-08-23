@@ -28,7 +28,7 @@ const header = `
     Home
   </a>
 
-  <a class="nav-link" href="/#qa">
+  <a class="nav-link" href="/qa">
     QA
   </a>
 
