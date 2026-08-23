@@ -24,8 +24,8 @@ const header = `
 
       <div class="nav-menu" id="mainNav">
 
-        <a class="nav-link" href="/#work">
-          Work
+        <a class="nav-link" href="/">
+          Home
         </a>
 
         <a class="nav-link" href="/#web">
