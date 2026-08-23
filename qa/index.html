@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Guess the Word | Augment Design</title>
+  <title>QA Test Form | Augment Design</title>
 
   <!-- Bootstrap -->
   <link
@@ -26,134 +26,112 @@
 
     <div class="game">
 
-      <!-- Score / Title -->
-      <div class="top-bar">
+      <h1>QA Test Form</h1>
 
-        <span>
-          Score1:
-          <span id="score">0</span>
-        </span>
+      <p>
+        Simple form for practicing manual testing, form validation,
+        accessibility and responsive testing.
+      </p>
 
-        <span>
-          Guess the Word
-        </span>
+      <form id="qaForm">
 
-      </div>
+        <div>
+          <label for="name">
+            Name
+          </label>
 
-      <!-- Definition -->
-      <div class="word-card">
-
-        <p id="definition">
-          Definition goes here
-        </p>
-
-      </div>
-
-      <!-- Correct / Try Again -->
-      <p id="result"></p>
-
-      <!-- Answer Row -->
-      <div class="answer-row">
-
-        <input
-          type="text"
-          id="guessInput"
-          placeholder="What word is this?"
-          autocomplete="off"
-        >
-
-        <button
-          id="hintButton"
-          type="button"
-        >
-          HINT
-        </button>
-
-        <button
-          id="showButton"
-          type="button"
-        >
-          SHOW WORD
-        </button>
-
-      </div>
-
-      <!-- Hint -->
-      <p id="hintText"></p>
-
-      <!-- Game Buttons -->
-      <div class="buttons">
-
-        <button
-          id="guessButton"
-          type="button"
-        >
-          GUESS
-        </button>
-
-        <button
-          id="addWordButton"
-          type="button"
-        >
-          + ADD WORD
-        </button>
-
-        <button
-          id="nextButton"
-          type="button"
-        >
-          NEXT
-        </button>
-
-      </div>
-
-      <!-- Add Word Form -->
-      <div
-        id="addWordForm"
-        class="add-word-form"
-      >
-
-        <h2>
-          Add New Word
-        </h2>
-
-        <input
-          type="text"
-          id="newWord"
-          placeholder="Word"
-        >
-
-        <input
-          type="text"
-          id="newDefinition"
-          placeholder="Definition"
-        >
-
-        <input
-          type="text"
-          id="newHints"
-          placeholder="Hints: memory, past, sentimental"
-        >
-
-        <div class="add-word-buttons">
-
-          <button
-            id="saveWordButton"
-            type="button"
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
           >
-            SAVE
-          </button>
-
-          <button
-            id="cancelWordButton"
-            type="button"
-          >
-            CANCEL
-          </button>
-
         </div>
 
-      </div>
+
+        <div>
+          <label for="email">
+            Email
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          >
+        </div>
+
+
+        <div>
+          <label for="testType">
+            Test Type
+          </label>
+
+          <select
+            id="testType"
+            name="testType"
+            required
+          >
+            <option value="">
+              Select a test type
+            </option>
+
+            <option value="manual">
+              Manual Testing
+            </option>
+
+            <option value="accessibility">
+              Accessibility Testing
+            </option>
+
+            <option value="responsive">
+              Responsive Testing
+            </option>
+          </select>
+        </div>
+
+
+        <div>
+          <label for="comments">
+            Comments
+          </label>
+
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+          ></textarea>
+        </div>
+
+
+        <div>
+          <input
+            type="checkbox"
+            id="confirm"
+            name="confirm"
+          >
+
+          <label for="confirm">
+            I have reviewed the information above.
+          </label>
+        </div>
+
+
+        <button
+          type="submit"
+          id="submitButton"
+        >
+          SUBMIT
+        </button>
+
+      </form>
+
+      <p
+        id="formResult"
+        role="status"
+        aria-live="polite"
+      ></p>
 
     </div>
 
@@ -168,10 +146,7 @@
   </script>
 
   <!-- Shared Components -->
-  <script src="/js/components.js"></script>
-
-  <!-- Word Game JavaScript -->
-  <script src="game.js"></script>
+  <script src="/js/components.js?v=5"></script>
 
 </body>
 
