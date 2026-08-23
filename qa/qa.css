@@ -1,0 +1,379 @@
+/* =========================
+   QA PAGE
+   ========================= */
+
+.qa-page {
+  background: #000000;
+  color: #e6e6e6;
+}
+
+.qa-container {
+  width: calc(100% - 64px);
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.qa-hero {
+  padding: 100px 0 90px;
+
+  background: #000000;
+}
+
+.qa-hero h1 {
+  max-width: 850px;
+
+  margin: 12px 0 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(46px, 6vw, 76px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.qa-intro {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: #bdbdbd;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+   ========================= */
+
+.qa-section {
+  padding: 90px 0;
+
+  border-top: 1px solid #242424;
+}
+
+.qa-section h2 {
+  margin: 10px 0 40px;
+
+  color: #ffffff;
+
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 400;
+}
+
+.section-intro {
+  max-width: 700px;
+
+  margin: -20px 0 40px;
+
+  color: #bdbdbd;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   PROCESS
+   ========================= */
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.process-card {
+  min-height: 230px;
+
+  padding: 28px;
+
+  background: #151515;
+
+  border: 1px solid #303030;
+}
+
+.process-card span {
+  color: #999999;
+
+  font-size: 13px;
+}
+
+.process-card h3 {
+  margin: 20px 0 12px;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.process-card p {
+  margin: 0;
+
+  color: #bdbdbd;
+
+  line-height: 1.65;
+}
+
+
+/* =========================
+   PROJECTS
+   ========================= */
+
+.qa-projects {
+  background: #0b0b0b;
+}
+
+.project-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.qa-project-card {
+  min-height: 290px;
+
+  padding: 30px;
+
+  background: #151515;
+
+  border: 1px solid #303030;
+}
+
+.project-type {
+  margin: 0;
+
+  color: #999999;
+
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.qa-project-card h3 {
+  margin: 20px 0 15px;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.qa-project-card p {
+  color: #bdbdbd;
+
+  line-height: 1.65;
+}
+
+.qa-project-card a {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.qa-project-card a:hover,
+.qa-project-card a:focus {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+.form-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(260px, 1fr);
+
+  gap: 50px;
+
+  align-items: start;
+}
+
+.qa-form {
+  max-width: 650px;
+}
+
+.form-field {
+  margin-bottom: 24px;
+}
+
+.form-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #ffffff;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  background: #111111;
+  color: #ffffff;
+
+  border: 1px solid #666666;
+
+  border-radius: 0;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.checkbox-field {
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+
+  align-items: flex-start;
+}
+
+.checkbox-field input {
+  margin-top: 5px;
+}
+
+.qa-button {
+  padding: 12px 25px;
+
+  background: #ffffff;
+  color: #000000;
+
+  border: 1px solid #ffffff;
+
+  cursor: pointer;
+}
+
+.qa-button:hover,
+.qa-button:focus {
+  background: transparent;
+  color: #ffffff;
+}
+
+
+/* =========================
+   TESTING PANEL
+   ========================= */
+
+.testing-panel {
+  padding: 28px;
+
+  background: #151515;
+
+  border: 1px solid #303030;
+}
+
+.testing-panel h3 {
+  margin-top: 0;
+
+  color: #ffffff;
+
+  font-size: 22px;
+}
+
+.testing-panel ul {
+  margin-bottom: 0;
+  padding-left: 22px;
+
+  color: #bdbdbd;
+
+  line-height: 1.9;
+}
+
+
+/* =========================
+   TOOLS
+   ========================= */
+
+.tools-section {
+  background: #0b0b0b;
+}
+
+.tool-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.tool-list span {
+  padding: 10px 16px;
+
+  background: #151515;
+
+  border: 1px solid #404040;
+
+  color: #d0d0d0;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .process-grid,
+  .project-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .form-layout {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 650px) {
+
+  .qa-container {
+    width: calc(100% - 32px);
+  }
+
+  .qa-hero {
+    padding: 70px 0 60px;
+  }
+
+  .qa-section {
+    padding: 65px 0;
+  }
+
+  .process-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
