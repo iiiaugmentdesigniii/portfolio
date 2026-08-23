@@ -24,35 +24,39 @@ const header = `
 
       <div class="nav-menu" id="mainNav">
 
-        <a class="nav-link" href="/">
-          Home
-        </a>
+  <a class="nav-link" href="/">
+    Home
+  </a>
 
-        <a class="nav-link" href="/#web">
-          Web
-        </a>
+  <a class="nav-link" href="/#qa">
+    QA
+  </a>
 
-        <a class="nav-link" href="/#qa">
-          QA
-        </a>
+  <a class="nav-link" href="/#web">
+    Web
+  </a>
 
-        <a class="nav-link" href="/#design">
-          Design
-        </a>
+  <a class="nav-link" href="/#react">
+    React
+  </a>
 
-        <a class="nav-link" href="/#photo">
-          Photo
-        </a>
+  <a class="nav-link" href="/#design">
+    Design
+  </a>
 
-        <a class="nav-link" href="/#about">
-          About
-        </a>
+  <a class="nav-link" href="/#photo">
+    Photo
+  </a>
 
-        <a class="nav-contact" href="/#contact">
-          Contact
-        </a>
+  <a class="nav-link" href="/#about">
+    About
+  </a>
 
-      </div>
+  <a class="nav-contact" href="/#contact">
+    Contact
+  </a>
+
+</div>
 
     </div>
 
