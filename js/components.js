@@ -44,7 +44,7 @@ const header = `
     Design
   </a>
 
-  <a class="nav-link" href="/photo/">
+  <a class="nav-link" href="/photo">
     Photo
   </a>
 
