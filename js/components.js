@@ -28,7 +28,7 @@ const header = `
     Home
   </a>
 
-  <a class="nav-link" href="/qa">
+  <a class="nav-link" href="/qa/">
     QA
   </a>
 
@@ -44,7 +44,7 @@ const header = `
     Design
   </a>
 
-  <a class="nav-link" href="/photo">
+  <a class="nav-link" href="/photo/">
     Photo
   </a>
 
