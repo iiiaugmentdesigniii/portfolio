@@ -1,0 +1,89 @@
+/* =========================
+   PHOTOGRAPHY PAGE
+========================= */
+
+.photo-page {
+  background: #000;
+  color: #fff;
+}
+
+.photo-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+
+/* =========================
+   PHOTO GRID
+========================= */
+
+.photo-section {
+  padding: 40px 0 80px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 88px;
+  align-items: start;
+}
+
+.photo-item {
+  display: block;
+  border: 3px solid #fff;
+  overflow: hidden;
+  background: #111;
+}
+
+.photo-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+
+/* Optional hover effect */
+
+.photo-item {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.photo-item:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .photo-container {
+    width: min(100% - 32px, 1200px);
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+}
