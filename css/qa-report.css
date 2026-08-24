@@ -1,0 +1,496 @@
+/* =========================================================
+   QA REPORT / CASE STUDY PAGES
+   Used by individual QA project pages
+   ========================================================= */
+
+
+/* =========================
+   PAGE
+   ========================= */
+
+.qa-project-page {
+  background: #000000;
+  color: #ffffff;
+}
+
+.qa-project-page main {
+  width: 100%;
+}
+
+
+/* =========================
+   CONTAINER
+   Matches the spacing used
+   throughout the portfolio
+   ========================= */
+
+.project-container {
+  width: calc(100% - 64px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.project-hero {
+  padding: 100px 0 90px;
+  background: #000000;
+}
+
+.project-hero .section-label {
+  margin: 0 0 14px;
+  color: #989898;
+
+  font-size: 13px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.project-hero h1 {
+  max-width: 900px;
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.project-intro {
+  max-width: 760px;
+  margin: 28px 0 0;
+
+  color: #b8b8b8;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+   ========================= */
+
+.project-section {
+  padding: 90px 0;
+  border-top: 1px solid #252525;
+}
+
+.project-section:nth-of-type(even) {
+  background: #0b0b0b;
+}
+
+.project-section .section-label {
+  margin: 0 0 14px;
+
+  color: #989898;
+
+  font-size: 13px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.project-section h2 {
+  margin: 0 0 40px;
+
+  color: #ffffff;
+
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+
+/* =========================
+   PROJECT OVERVIEW
+   ========================= */
+
+.overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.overview-item {
+  padding: 28px;
+
+  background: #151515;
+
+  border: 1px solid #303030;
+}
+
+.overview-item span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #989898;
+
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.overview-item strong {
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* =========================
+   TESTING SCOPE
+   ========================= */
+
+.scope-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.scope-card {
+  min-height: 220px;
+  padding: 28px;
+
+  background: #151515;
+
+  border: 1px solid #303030;
+}
+
+.scope-card span {
+  color: #888888;
+  font-size: 13px;
+}
+
+.scope-card h3 {
+  margin: 18px 0 12px;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.scope-card p {
+  margin: 0;
+
+  color: #bcbcbc;
+
+  line-height: 1.65;
+}
+
+
+/* =========================
+   TEST CASES
+   ========================= */
+
+.test-case-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.test-case {
+  padding: 28px;
+
+  background: #151515;
+
+  border: 1px solid #303030;
+}
+
+.test-case-top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 18px;
+
+  color: #989898;
+
+  font-size: 13px;
+}
+
+.test-case h3 {
+  margin: 0 0 12px;
+
+  color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.test-case p {
+  margin: 0;
+
+  color: #bcbcbc;
+
+  line-height: 1.65;
+}
+
+
+/* =========================
+   STATUS
+   ========================= */
+
+.status-pass {
+  padding: 5px 10px;
+
+  border: 1px solid #555555;
+}
+
+.status-fail {
+  padding: 5px 10px;
+
+  border: 1px solid #777777;
+}
+
+
+/* =========================
+   ACCESSIBILITY
+   ========================= */
+
+.accessibility-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 50px;
+}
+
+.accessibility-grid h3 {
+  margin-top: 0;
+
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.accessibility-grid p,
+.accessibility-grid li {
+  color: #bcbcbc;
+  line-height: 1.7;
+}
+
+.accessibility-grid ul {
+  padding-left: 20px;
+}
+
+
+/* =========================
+   FINDINGS
+   ========================= */
+
+.finding-card {
+  padding: 30px;
+
+  background: #151515;
+
+  border: 1px solid #303030;
+}
+
+.finding-card + .finding-card {
+  margin-top: 24px;
+}
+
+.finding-card h3 {
+  margin: 0 0 20px;
+
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.finding-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 40px;
+}
+
+.finding-grid strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #ffffff;
+}
+
+.finding-grid p {
+  margin: 0;
+
+  color: #bcbcbc;
+
+  line-height: 1.65;
+}
+
+
+/* =========================
+   REPORT / DOCUMENT LINKS
+   ========================= */
+
+.document-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.document-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 190px;
+  padding: 28px;
+
+  background: #151515;
+  color: #ffffff;
+
+  border: 1px solid #303030;
+
+  text-decoration: none;
+}
+
+.document-card span {
+  color: #989898;
+
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.document-card strong {
+  margin: 20px 0;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.document-card small {
+  margin-top: auto;
+
+  color: #bcbcbc;
+}
+
+.document-card:hover,
+.document-card:focus {
+  border-color: #777777;
+}
+
+
+/* =========================
+   GENERAL PROJECT LINKS
+   ========================= */
+
+.project-link {
+  display: inline-block;
+
+  margin-top: 28px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   TAKEAWAYS / SUMMARY
+   ========================= */
+
+.takeaway-copy {
+  max-width: 760px;
+
+  color: #bcbcbc;
+
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .scope-grid,
+  .document-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .overview-grid,
+  .test-case-list,
+  .accessibility-grid,
+  .finding-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 650px) {
+
+  .project-container {
+    width: calc(100% - 32px);
+  }
+
+  .project-hero {
+    padding: 70px 0 60px;
+  }
+
+  .project-section {
+    padding: 65px 0;
+  }
+
+  .scope-grid,
+  .document-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scope-card,
+  .overview-item,
+  .test-case,
+  .finding-card,
+  .document-card {
+    padding: 24px;
+  }
+
+  .test-case-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+}
