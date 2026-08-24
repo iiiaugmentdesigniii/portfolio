@@ -9,15 +9,16 @@
 
   <meta
     name="description"
-    content="USHRAB.org QA case study featuring manual website testing, accessibility evaluation, responsive testing, test cases and defect documentation."
+    content="USHRAB.org QA case study featuring manual website testing, accessibility checks, test cases, defect documentation and QA reporting."
   >
 
-  <!-- Shared CSS -->
+  <!-- Shared Site CSS -->
   <link rel="stylesheet" href="/css/style.css?v=6">
 
-  <!-- QA Case Study CSS -->
-  <link rel="stylesheet" href="/css/qa-report.css?v=1">
+  <!-- Shared QA Report / Case Study CSS -->
+  <link rel="stylesheet" href="/css/qa-report.css?v=2">
 </head>
+
 
 <body class="qa-project-page">
 
@@ -27,9 +28,9 @@
 
   <main>
 
-    <!-- =========================
+    <!-- =====================================================
          HERO
-    ========================== -->
+    ====================================================== -->
 
     <section class="project-hero">
 
@@ -44,9 +45,9 @@
         </h1>
 
         <p class="project-intro">
-          Manual website and accessibility testing focused on
-          functionality, responsive behavior, navigation, forms,
-          resources and documented test results.
+          Manual website testing focused on functionality, navigation,
+          forms, downloads, accessibility and documented test results
+          for the USHRAB.org website.
         </p>
 
       </div>
@@ -54,9 +55,9 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          PROJECT OVERVIEW
-    ========================== -->
+    ====================================================== -->
 
     <section class="project-section">
 
@@ -70,11 +71,14 @@
           Project Overview
         </h2>
 
+
         <div class="overview-grid">
 
           <div class="overview-item">
 
-            <span>Website</span>
+            <span>
+              Website
+            </span>
 
             <strong>
               USHRAB.org
@@ -85,10 +89,12 @@
 
           <div class="overview-item">
 
-            <span>Role</span>
+            <span>
+              Role
+            </span>
 
             <strong>
-              QA Testing & Accessibility
+              Manual QA & Accessibility Testing
             </strong>
 
           </div>
@@ -96,10 +102,12 @@
 
           <div class="overview-item">
 
-            <span>Testing</span>
+            <span>
+              Testing
+            </span>
 
             <strong>
-              Manual · Responsive · Accessibility
+              Functional · Accessibility · Content Validation
             </strong>
 
           </div>
@@ -107,10 +115,12 @@
 
           <div class="overview-item">
 
-            <span>Tools</span>
+            <span>
+              Environment
+            </span>
 
             <strong>
-              DevTools · WAVE · Axe · Lighthouse
+              Windows · Chrome · Standard Wi-Fi
             </strong>
 
           </div>
@@ -122,109 +132,100 @@
     </section>
 
 
-    <!-- =========================
-         TESTING SCOPE
-    ========================== -->
+    <!-- =====================================================
+         TEST PLAN
+    ====================================================== -->
 
-    <section class="project-section dark-section">
+    <section class="project-section">
 
       <div class="project-container">
 
         <p class="section-label">
-          Scope
+          Planning
         </p>
 
         <h2>
-          What I Tested
+          Test Plan
         </h2>
+
 
         <div class="scope-grid">
 
+          <!-- IN SCOPE -->
+
           <article class="scope-card">
 
-            <span>01</span>
+            <span>
+              01
+            </span>
 
             <h3>
-              Navigation
+              In Scope
             </h3>
 
             <p>
-              Main navigation links, header logo behavior and page routing.
+              Website pages, navigation, forms, resource links,
+              downloadable documents and visible content behavior.
             </p>
 
           </article>
 
 
+          <!-- FUNCTIONAL -->
+
           <article class="scope-card">
 
-            <span>02</span>
+            <span>
+              02
+            </span>
 
             <h3>
-              Forms & Validation
+              Functional Testing
             </h3>
 
             <p>
-              Contact form submissions, required fields and validation behavior.
+              Navigation links, buttons, form behavior, events,
+              resources and downloadable documents.
             </p>
 
           </article>
 
 
+          <!-- ACCESSIBILITY -->
+
           <article class="scope-card">
 
-            <span>03</span>
+            <span>
+              03
+            </span>
 
             <h3>
-              Responsive Layout
+              Accessibility Checks
             </h3>
 
             <p>
-              Desktop, tablet and mobile layouts at multiple viewport sizes.
+              Keyboard behavior, visible focus, key image alternative
+              text and automated accessibility evaluation.
             </p>
 
           </article>
 
 
-          <article class="scope-card">
-
-            <span>04</span>
-
-            <h3>
-              Resources & Downloads
-            </h3>
-
-            <p>
-              Resource pages, links and downloadable PDF functionality.
-            </p>
-
-          </article>
-
+          <!-- OUT OF SCOPE -->
 
           <article class="scope-card">
 
-            <span>05</span>
+            <span>
+              04
+            </span>
 
             <h3>
-              Search
+              Out of Scope
             </h3>
 
             <p>
-              Search behavior and validation of relevant results.
-            </p>
-
-          </article>
-
-
-          <article class="scope-card">
-
-            <span>06</span>
-
-            <h3>
-              Accessibility
-            </h3>
-
-            <p>
-              Keyboard access, structure, contrast and automated checks.
+              Mobile layouts below 768px, backend email delivery,
+              server configuration and administrative functionality.
             </p>
 
           </article>
@@ -236,9 +237,9 @@
     </section>
 
 
-    <!-- =========================
-         SELECTED TEST CASES
-    ========================== -->
+    <!-- =====================================================
+         TEST EXECUTION
+    ====================================================== -->
 
     <section
       id="test-cases"
@@ -248,14 +249,17 @@
       <div class="project-container">
 
         <p class="section-label">
-          Test Documentation
+          Test Execution
         </p>
 
         <h2>
           Selected Test Cases
         </h2>
 
+
         <div class="test-case-list">
+
+          <!-- TC-01 -->
 
           <article class="test-case">
 
@@ -283,12 +287,14 @@
           </article>
 
 
+          <!-- TC-02 -->
+
           <article class="test-case">
 
             <div class="test-case-top">
 
               <span>
-                TC-03
+                TC-02
               </span>
 
               <strong class="status-pass">
@@ -298,42 +304,46 @@
             </div>
 
             <h3>
-              Mobile hamburger menu opens and closes
+              Grant documents download properly
             </h3>
 
             <p>
-              Verified menu visibility, navigation behavior and closing
-              behavior at responsive mobile widths.
+              Verified that available grant documents and related
+              worksheet links opened or downloaded successfully.
             </p>
 
           </article>
 
+
+          <!-- TC-08 -->
 
           <article class="test-case">
 
             <div class="test-case-top">
 
               <span>
-                TC-06
+                TC-08
               </span>
 
-              <strong class="status-pass">
-                Pass
+              <strong class="status-fail">
+                Fail
               </strong>
 
             </div>
 
             <h3>
-              Contact form accepts valid data
+              Related resources load correctly
             </h3>
 
             <p>
-              Verified valid name, email and message input and expected
-              submission behavior.
+              Testing identified multiple unavailable, restricted or
+              broken external resource destinations.
             </p>
 
           </article>
 
+
+          <!-- TC-10 -->
 
           <article class="test-case">
 
@@ -343,19 +353,19 @@
                 TC-10
               </span>
 
-              <strong class="status-pass">
-                Pass
+              <strong class="status-fail">
+                Fail
               </strong>
 
             </div>
 
             <h3>
-              Responsive layout
+              WAVE accessibility scan
             </h3>
 
             <p>
-              Verified readability and layout behavior at desktop,
-              tablet and mobile viewport sizes.
+              Automated accessibility testing identified five errors
+              requiring further review and correction.
             </p>
 
           </article>
@@ -369,7 +379,7 @@
           target="_blank"
           rel="noopener"
         >
-          View Complete Test Cases →
+          View All 10 Test Cases →
         </a>
 
       </div>
@@ -377,118 +387,42 @@
     </section>
 
 
-    <!-- =========================
-         ACCESSIBILITY
-    ========================== -->
-
-    <section
-      id="accessibility"
-      class="project-section dark-section"
-    >
-
-      <div class="project-container">
-
-        <p class="section-label">
-          Accessibility
-        </p>
-
-        <h2>
-          Accessibility Testing
-        </h2>
-
-        <div class="accessibility-grid">
-
-          <div>
-
-            <h3>
-              Manual Checks
-            </h3>
-
-            <ul>
-              <li>Keyboard navigation</li>
-              <li>Focus visibility</li>
-              <li>Heading structure</li>
-              <li>Form labels</li>
-              <li>Link behavior</li>
-              <li>Responsive reflow</li>
-            </ul>
-
-          </div>
-
-
-          <div>
-
-            <h3>
-              Tools
-            </h3>
-
-            <ul>
-              <li>WAVE</li>
-              <li>Axe</li>
-              <li>Lighthouse</li>
-              <li>Chrome DevTools</li>
-            </ul>
-
-          </div>
-
-        </div>
-
-
-        <a
-          class="project-link"
-          href="/qa/reports/accessibility-audit.pdf"
-          target="_blank"
-          rel="noopener"
-        >
-          View Accessibility Audit →
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         FINDINGS
-    ========================== -->
+    <!-- =====================================================
+         DEFECT DOCUMENTATION
+    ====================================================== -->
 
     <section class="project-section">
 
       <div class="project-container">
 
         <p class="section-label">
-          Findings
+          Defect Documentation
         </p>
 
         <h2>
-          Example Finding
+          Issues Identified
         </h2>
+
+
+        <!-- BUG 02 -->
 
         <article class="finding-card">
 
-          <div class="finding-heading">
-
-            <span>
-              ISSUE
-            </span>
-
-            <strong>
-              Resource Link
-            </strong>
-
-          </div>
-
+          <h3>
+            BUG-02 · Broken Grant Guidelines Link
+          </h3>
 
           <div class="finding-grid">
 
             <div>
 
-              <h3>
+              <strong>
                 Expected
-              </h3>
+              </strong>
 
               <p>
-                The selected resource should open successfully.
+                The Grant Guidelines resource should open the intended
+                grant information successfully.
               </p>
 
             </div>
@@ -496,13 +430,97 @@
 
             <div>
 
-              <h3>
+              <strong>
                 Actual
-              </h3>
+              </strong>
 
               <p>
-                The selected link returned an unavailable or incorrect
-                destination.
+                The selected Grant Guidelines link returned a
+                404 Not Found page.
+              </p>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- BUG 03 -->
+
+        <article class="finding-card">
+
+          <h3>
+            BUG-03 · Broken Related Resources
+          </h3>
+
+          <div class="finding-grid">
+
+            <div>
+
+              <strong>
+                Expected
+              </strong>
+
+              <p>
+                External resources should open the intended
+                information successfully.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <strong>
+                Actual
+              </strong>
+
+              <p>
+                Multiple resource links returned unavailable,
+                restricted or missing-content results.
+              </p>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- BUG 05 -->
+
+        <article class="finding-card">
+
+          <h3>
+            BUG-05 · WAVE Accessibility Errors
+          </h3>
+
+          <div class="finding-grid">
+
+            <div>
+
+              <strong>
+                Expected
+              </strong>
+
+              <p>
+                The evaluated page should avoid detectable
+                accessibility errors.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <strong>
+                Actual
+              </strong>
+
+              <p>
+                WAVE reported five accessibility errors requiring
+                additional investigation and correction.
               </p>
 
             </div>
@@ -516,11 +534,75 @@
     </section>
 
 
-    <!-- =========================
-         DOCUMENTATION
-    ========================== -->
+    <!-- =====================================================
+         ACCESSIBILITY
+    ====================================================== -->
 
-    <section class="project-section dark-section">
+    <section
+      id="accessibility"
+      class="project-section"
+    >
+
+      <div class="project-container">
+
+        <p class="section-label">
+          Accessibility
+        </p>
+
+        <h2>
+          Accessibility Checks
+        </h2>
+
+
+        <div class="accessibility-grid">
+
+          <!-- MANUAL -->
+
+          <div>
+
+            <h3>
+              Manual Checks
+            </h3>
+
+            <ul>
+              <li>Keyboard navigation</li>
+              <li>Logical tab order</li>
+              <li>Visible keyboard focus</li>
+              <li>Key image alternative text</li>
+              <li>Link and navigation behavior</li>
+            </ul>
+
+          </div>
+
+
+          <!-- AUTOMATED -->
+
+          <div>
+
+            <h3>
+              Automated Testing
+            </h3>
+
+            <ul>
+              <li>WAVE accessibility evaluation</li>
+              <li>Homepage accessibility scan</li>
+              <li>Five errors identified for further review</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SUPPORTING DOCUMENTATION
+    ====================================================== -->
+
+    <section class="project-section">
 
       <div class="project-container">
 
@@ -532,7 +614,10 @@
           Supporting Documents
         </h2>
 
+
         <div class="document-grid">
+
+          <!-- TEST PLAN -->
 
           <a
             class="document-card"
@@ -540,39 +625,23 @@
             target="_blank"
             rel="noopener"
           >
+
             <span>
-              WEBSITE QA
+              TEST PLANNING
             </span>
 
             <strong>
-              QA Report
+              Mini Test Plan
             </strong>
 
             <small>
               View PDF →
             </small>
+
           </a>
 
 
-          <a
-            class="document-card"
-            href="/qa/reports/accessibility-audit.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            <span>
-              ACCESSIBILITY
-            </span>
-
-            <strong>
-              Accessibility Audit
-            </strong>
-
-            <small>
-              View PDF →
-            </small>
-          </a>
-
+          <!-- TEST CASES -->
 
           <a
             class="document-card"
@@ -580,17 +649,43 @@
             target="_blank"
             rel="noopener"
           >
+
             <span>
               TEST DOCUMENTATION
             </span>
 
             <strong>
-              Test Cases
+              10 Test Cases
             </strong>
 
             <small>
               View PDF →
             </small>
+
+          </a>
+
+
+          <!-- ACCESSIBILITY / ISSUE LOG -->
+
+          <a
+            class="document-card"
+            href="/qa/reports/accessibility-audit.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <span>
+              ACCESSIBILITY
+            </span>
+
+            <strong>
+              Accessibility Findings
+            </strong>
+
+            <small>
+              View PDF →
+            </small>
+
           </a>
 
         </div>
@@ -600,9 +695,9 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          TAKEAWAYS
-    ========================== -->
+    ====================================================== -->
 
     <section class="project-section">
 
@@ -617,15 +712,16 @@
         </h2>
 
         <p class="takeaway-copy">
-          This project provided experience creating structured test cases,
-          comparing expected and actual behavior, documenting defects,
-          performing responsive checks and combining automated
-          accessibility tools with manual evaluation.
+          This project provided experience creating a test plan,
+          writing structured test cases, comparing expected and actual
+          behavior, identifying reproducible defects and documenting
+          accessibility findings using manual and automated testing.
         </p>
 
       </div>
 
     </section>
+
 
   </main>
 
