@@ -238,153 +238,479 @@
 
 
     <!-- =====================================================
-         TEST EXECUTION
-    ====================================================== -->
+     TEST EXECUTION
+====================================================== -->
 
-    <section
-      id="test-cases"
-      class="project-section"
-    >
+<section
+  id="test-cases"
+  class="project-section"
+>
 
-      <div class="project-container">
+  <div class="project-container">
 
-        <p class="section-label">
-          Test Execution
-        </p>
+    <p class="section-label">
+      Test Execution
+    </p>
 
-        <h2>
-          Selected Test Cases
-        </h2>
+    <h2>
+      Test Cases
+    </h2>
 
-
-        <div class="test-case-list">
-
-          <!-- TC-01 -->
-
-          <article class="test-case">
-
-            <div class="test-case-top">
-
-              <span>
-                TC-01
-              </span>
-
-              <strong class="status-pass">
-                Pass
-              </strong>
-
-            </div>
-
-            <h3>
-              Navigation links open correctly
-            </h3>
-
-            <p>
-              Verified that primary navigation links opened the expected
-              pages without broken links or unexpected redirects.
-            </p>
-
-          </article>
+    <p class="takeaway-copy">
+      Ten manual test cases were created to evaluate navigation,
+      downloads, forms, events, external resources, content accuracy
+      and accessibility across USHRAB.org.
+    </p>
 
 
-          <!-- TC-02 -->
+    <div class="test-case-list">
 
-          <article class="test-case">
+      <!-- =========================
+           TC-01
+      ========================== -->
 
-            <div class="test-case-top">
+      <article class="test-case">
 
-              <span>
-                TC-02
-              </span>
+        <div class="test-case-top">
 
-              <strong class="status-pass">
-                Pass
-              </strong>
+          <span>
+            TC-01 · Home
+          </span>
 
-            </div>
-
-            <h3>
-              Grant documents download properly
-            </h3>
-
-            <p>
-              Verified that available grant documents and related
-              worksheet links opened or downloaded successfully.
-            </p>
-
-          </article>
-
-
-          <!-- TC-08 -->
-
-          <article class="test-case">
-
-            <div class="test-case-top">
-
-              <span>
-                TC-08
-              </span>
-
-              <strong class="status-fail">
-                Fail
-              </strong>
-
-            </div>
-
-            <h3>
-              Related resources load correctly
-            </h3>
-
-            <p>
-              Testing identified multiple unavailable, restricted or
-              broken external resource destinations.
-            </p>
-
-          </article>
-
-
-          <!-- TC-10 -->
-
-          <article class="test-case">
-
-            <div class="test-case-top">
-
-              <span>
-                TC-10
-              </span>
-
-              <strong class="status-fail">
-                Fail
-              </strong>
-
-            </div>
-
-            <h3>
-              WAVE accessibility scan
-            </h3>
-
-            <p>
-              Automated accessibility testing identified five errors
-              requiring further review and correction.
-            </p>
-
-          </article>
+          <strong class="status-pass">
+            Pass
+          </strong>
 
         </div>
 
+        <h3>
+          Navigation links open correctly
+        </h3>
 
-        <a
-          class="project-link"
-          href="/qa/reports/test-cases.pdf"
-          target="_blank"
-          rel="noopener"
-        >
-          View All 10 Test Cases →
-        </a>
+        <p>
+          <strong>Precondition:</strong>
+          Browser open at USHRAB.org.
+        </p>
 
-      </div>
+        <p>
+          <strong>Steps:</strong>
+          Locate the main navigation menu and open each primary
+          navigation link.
+        </p>
 
-    </section>
+        <p>
+          <strong>Expected:</strong>
+          Each link opens the correct page without errors,
+          broken links or unexpected redirects.
+        </p>
+
+      </article>
+
+
+      <!-- =========================
+           TC-02
+      ========================== -->
+
+      <article class="test-case">
+
+        <div class="test-case-top">
+
+          <span>
+            TC-02 · Application & Instructions
+          </span>
+
+          <strong class="status-pass">
+            Pass
+          </strong>
+
+        </div>
+
+        <h3>
+          Grant documents download properly
+        </h3>
+
+        <p>
+          <strong>Precondition:</strong>
+          Application & Instructions page open.
+        </p>
+
+        <p>
+          <strong>Steps:</strong>
+          Scroll to the document section and select each
+          PDF or worksheet link.
+        </p>
+
+        <p>
+          <strong>Expected:</strong>
+          Each document opens or downloads successfully,
+          displays readable content and contains no corruption.
+        </p>
+
+      </article>
+
+
+      <!-- =========================
+           TC-03
+      ========================== -->
+
+      <article class="test-case">
+
+        <div class="test-case-top">
+
+          <span>
+            TC-03 · Forms
+          </span>
+
+          <strong class="status-pass">
+            Pass
+          </strong>
+
+        </div>
+
+        <h3>
+          Forms page messaging is accurate and up-to-date
+        </h3>
+
+        <p>
+          <strong>Precondition:</strong>
+          Forms page open.
+        </p>
+
+        <p>
+          <strong>Steps:</strong>
+          Review the page content and application packet messaging.
+        </p>
+
+        <p>
+          <strong>Expected:</strong>
+          Messaging is accurate, current and clear with no
+          placeholders, outdated information or broken references.
+        </p>
+
+      </article>
+
+
+      <!-- =========================
+           TC-04
+      ========================== -->
+
+      <article class="test-case">
+
+        <div class="test-case-top">
+
+          <span>
+            TC-04 · Newsletter
+          </span>
+
+          <strong class="status-pass">
+            Pass
+          </strong>
+
+        </div>
+
+        <h3>
+          Newsletter sign-up accepts valid email
+        </h3>
+
+        <p>
+          <strong>Precondition:</strong>
+          Homepage open.
+        </p>
+
+        <p>
+          <strong>Steps:</strong>
+          Enter a valid email address in the newsletter form
+          and submit it.
+        </p>
+
+        <p>
+          <strong>Expected:</strong>
+          A success confirmation appears and the form accepts
+          the valid email without errors.
+        </p>
+
+      </article>
+
+
+      <!-- =========================
+           TC-05
+      ========================== -->
+
+      <article class="test-case">
+
+        <div class="test-case-top">
+
+          <span>
+            TC-05 · Newsletter
+          </span>
+
+          <strong class="status-pass">
+            Pass
+          </strong>
+
+        </div>
+
+        <h3>
+          Newsletter form rejects invalid email
+        </h3>
+
+        <p>
+          <strong>Precondition:</strong>
+          Newsletter form available.
+        </p>
+
+        <p>
+          <strong>Steps:</strong>
+          Enter an invalid email format and select Submit.
+        </p>
+
+        <p>
+          <strong>Expected:</strong>
+          The form displays an error or prevents submission
+          until a valid email address is entered.
+        </p>
+
+      </article>
+
+
+      <!-- =========================
+           TC-06
+      ========================== -->
+
+      <article class="test-case">
+
+        <div class="test-case-top">
+
+          <span>
+            TC-06 · Events Calendar
+          </span>
+
+          <strong class="status-pass">
+            Pass
+          </strong>
+
+        </div>
+
+        <h3>
+          Event details open correctly
+        </h3>
+
+        <p>
+          <strong>Precondition:</strong>
+          Training Opportunities page open.
+        </p>
+
+        <p>
+          <strong>Steps:</strong>
+          Review the event listings and open a listed training
+          or event item.
+        </p>
+
+        <p>
+          <strong>Expected:</strong>
+          Event details load correctly with no broken or
+          missing content.
+        </p>
+
+      </article>
+
+
+      <!-- =========================
+           TC-07
+      ========================== -->
+
+      <article class="test-case">
+
+        <div class="test-case-top">
+
+          <span>
+            TC-07 · Resources
+          </span>
+
+          <strong class="status-pass">
+            Pass
+          </strong>
+
+        </div>
+
+        <h3>
+          External resource links function correctly
+        </h3>
+
+        <p>
+          <strong>Precondition:</strong>
+          Resources page open.
+        </p>
+
+        <p>
+          <strong>Steps:</strong>
+          Open each external resource link.
+        </p>
+
+        <p>
+          <strong>Expected:</strong>
+          Each link opens the correct external website
+          without broken links or navigation errors.
+        </p>
+
+      </article>
+
+
+      <!-- =========================
+           TC-08
+      ========================== -->
+
+      <article class="test-case">
+
+        <div class="test-case-top">
+
+          <span>
+            TC-08 · Resources / Related
+          </span>
+
+          <strong class="status-fail">
+            Fail
+          </strong>
+
+        </div>
+
+        <h3>
+          Related resource content loads correctly
+        </h3>
+
+        <p>
+          <strong>Precondition:</strong>
+          Related Resources section open.
+        </p>
+
+        <p>
+          <strong>Steps:</strong>
+          Verify each link in the Related section and confirm
+          that it reaches the intended resource.
+        </p>
+
+        <p>
+          <strong>Expected:</strong>
+          All resources load successfully.
+        </p>
+
+        <p>
+          <strong>Actual:</strong>
+          Multiple destinations returned Access Denied,
+          404, Page Not Found or missing-content results.
+        </p>
+
+      </article>
+
+
+      <!-- =========================
+           TC-09
+      ========================== -->
+
+      <article class="test-case">
+
+        <div class="test-case-top">
+
+          <span>
+            TC-09 · How to Get on the Board
+          </span>
+
+          <strong class="status-fail">
+            Fail
+          </strong>
+
+        </div>
+
+        <h3>
+          All links work properly
+        </h3>
+
+        <p>
+          <strong>Precondition:</strong>
+          How to Get on the Board page open.
+        </p>
+
+        <p>
+          <strong>Steps:</strong>
+          Open each link on the page, including the
+          Board Member Onboarding Guide.
+        </p>
+
+        <p>
+          <strong>Expected:</strong>
+          All links open accessible pages or clearly communicate
+          when restricted access is intentional.
+        </p>
+
+        <p>
+          <strong>Actual:</strong>
+          The Board Member Onboarding Guide required permission
+          to view.
+        </p>
+
+      </article>
+
+
+      <!-- =========================
+           TC-10
+      ========================== -->
+
+      <article class="test-case">
+
+        <div class="test-case-top">
+
+          <span>
+            TC-10 · Homepage
+          </span>
+
+          <strong class="status-fail">
+            Fail
+          </strong>
+
+        </div>
+
+        <h3>
+          Accessibility scan passes WAVE evaluation
+        </h3>
+
+        <p>
+          <strong>Precondition:</strong>
+          Homepage available for accessibility evaluation.
+        </p>
+
+        <p>
+          <strong>Steps:</strong>
+          Run USHRAB.org through WAVE and review the reported
+          accessibility errors.
+        </p>
+
+        <p>
+          <strong>Expected:</strong>
+          Zero accessibility errors.
+        </p>
+
+        <p>
+          <strong>Actual:</strong>
+          WAVE reported five errors requiring correction.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <a
+      class="project-link"
+      href="/qa/reports/test-cases.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      View / Download Test Cases PDF →
+    </a>
+
+  </div>
+
+</section>
 
 
     <!-- =====================================================
