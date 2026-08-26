@@ -8,7 +8,7 @@ const header = `
       <a class="site-brand" href="/">
         <img
             class="brand-logo"
-            src="/images/Logo.jpg"
+            src="/images/photos/Logo.jpg"
             alt=""
         >
         <span class="brand-name">AUGMENT DESIGN</span>
