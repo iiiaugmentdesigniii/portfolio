@@ -91,13 +91,7 @@ input {
   line-height: 1;
 }
 
-/* .brand-main {
-  display: block;
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: 0.14em;
-} */
+
 .brand-main {
   display: block;
   color: #ffffff;
@@ -106,14 +100,6 @@ input {
   letter-spacing: 0.14em;
 }
 
-/* .brand-sub {
-  display: block;
-  margin-top: 5px;
-  color: #a9a9a9;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.30em;
-} */
 .brand-sub {
   display: block;
   margin-top: 5px;
@@ -130,58 +116,6 @@ input {
   display: block;
   flex-shrink: 0;
 }
-
-/* .site-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  color: #ffffff;
-
-  text-decoration: none;
-} */
- /* .site-brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-decoration: none;
-} */
-
-/* .brand-mark {
-  color: #ffffff;
-
-  font-weight: 700;
-  letter-spacing: 2px;
-} */
-
-/* .brand-name {
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  line-height: 1;
-} */
-/* .brand-name {
-  color: #ffffff;
-
-  font-size: 15px;
-  letter-spacing: 0.06em;
-} */
-
-/*Logo*/
-/* .brand-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  display: block;
-} */
-/* .brand-logo {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-  flex-shrink: 0;
-} */
-
 
 .nav-menu {
   display: flex;
@@ -299,7 +233,6 @@ input:focus-visible {
 
   .nav-container {
     width: calc(100% - 32px);
-
     flex-wrap: wrap;
   }
 
@@ -309,21 +242,18 @@ input:focus-visible {
 
   .nav-menu {
     display: none;
-
     width: 100%;
-
     padding: 22px 0 5px;
 
     flex-direction: column;
-    align-items: flex-start;
-
+    align-items: flex-end;
+    text-align: right;
     gap: 18px;
   }
 
   .nav-menu.is-open {
     display: flex;
   }
-
 }
 
 
