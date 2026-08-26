@@ -391,11 +391,31 @@
 }
 
 
+
+
+
+
+
+@media (max-width: 650px) {
+  .home-page .hero {
+    min-height: auto;
+  }
+
+  .home-page .hero-inner {
+    width: calc(100% - 32px);
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+
+  .home-page .hero-art {
+    height: 250px;
+  }
+}
 /* =========================
    MOBILE
    ========================= */
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
 
   .home-page .hero-inner {
     width: calc(100% - 32px);
@@ -439,4 +459,4 @@
     grid-template-columns: 1fr;
   }
 
-}
+} */
