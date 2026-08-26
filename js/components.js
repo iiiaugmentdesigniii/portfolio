@@ -6,7 +6,11 @@ const header = `
     <div class="nav-container">
 
       <a class="site-brand" href="/">
-        <span class="brand-mark">IIII</span>
+        <img
+            class="brand-logo"
+            src="images/Logo.png"
+            alt=""
+        >
         <span class="brand-name">AUGMENT DESIGN</span>
       </a>
 
