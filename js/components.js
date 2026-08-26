@@ -5,14 +5,18 @@ const header = `
 
     <div class="nav-container">
 
-      <a class="site-brand" href="/">
-        <img
-            class="brand-logo"
-            src="/images/photos/Logo.png"
-            alt=""
-        >
-        <span class="brand-name">AUGMENT DESIGN</span>
-      </a>
+     <a class="site-brand" href="/">
+  <img
+    class="brand-logo"
+    src="/images/photos/Logo.png"
+    alt=""
+  >
+
+  <span class="brand-name">
+    <span class="brand-main">AUGMENT</span>
+    <span class="brand-sub">DESIGN</span>
+  </span>
+</a>
 
       <button
         class="nav-toggle"
