@@ -77,13 +77,19 @@ input {
   justify-content: space-between;
 }
 
-.site-brand {
+/* .site-brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
 
   color: #ffffff;
 
+  text-decoration: none;
+} */
+ .site-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   text-decoration: none;
 }
 
@@ -96,10 +102,32 @@ input {
 
 .brand-name {
   color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+/* .brand-name {
+  color: #ffffff;
 
   font-size: 15px;
   letter-spacing: 0.06em;
+} */
+
+/*Logo*/
+/* .brand-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+} */
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
+
 
 .nav-menu {
   display: flex;
@@ -143,13 +171,7 @@ input {
   color: #000000;
 }
 
-/*Logo*/
-.brand-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  display: block;
-}
+
 
 
 /* Hamburger */
