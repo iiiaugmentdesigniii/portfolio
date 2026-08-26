@@ -91,6 +91,13 @@ input {
   line-height: 1;
 }
 
+/* .brand-main {
+  display: block;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+} */
 .brand-main {
   display: block;
   color: #ffffff;
@@ -99,10 +106,18 @@ input {
   letter-spacing: 0.14em;
 }
 
-.brand-sub {
+/* .brand-sub {
   display: block;
   margin-top: 5px;
   color: #a9a9a9;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.30em;
+} */
+.brand-sub {
+  display: block;
+  margin-top: 5px;
+  color: #d4ad54; /* adjust to exact logo gold */
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.30em;
