@@ -237,13 +237,28 @@
 /* =========================
    BOTTOM BUTTON ROW
    ========================= */
-
+/* 
 .word-game-page .buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 
   margin-top: 18px;
+} */
+
+/* =========================
+   BOTTOM BUTTON ROW
+   ========================= */
+
+.word-game-page .buttons {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.word-game-page #addWordButton {
+  margin-left: auto;
 }
 
 
@@ -307,6 +322,9 @@
     padding: 40px 16px 70px;
   }
 
+  .word-game-page #addWordButton {
+    margin-left: 0;
+  }
 
   .word-game-page .game {
     width: 100%;
