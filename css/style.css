@@ -276,20 +276,20 @@ input:focus-visible {
     background: #151515;
   }
 
- .nav-contact {
-  padding: 9px 18px;
+.nav-contact {
+  padding: 10px 18px;
+  background: #d4ad54;
   border: 1px solid #d4ad54;
-  color: #d4ad54;
+  color: #080808;
   font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
-  transition:
-    background 0.2s ease,
-    color 0.2s ease;
 }
 
 .nav-contact:hover,
 .nav-contact:focus {
-  background: #d4ad54;
+  background: #e2bf6a;
+  border-color: #e2bf6a;
   color: #000000;
 }
 
