@@ -270,18 +270,19 @@ input:focus-visible {
 
 .nav-contact {
   padding: 10px 18px;
-  background: #d4ad54;
-  border: 1px solid #d4ad54;
+  background: #6f9fd8;
+  border: 1px solid #6f9fd8;
   color: #080808;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+  text-align: center;
 }
 
 .nav-contact:hover,
 .nav-contact:focus {
-  background: #e2bf6a;
-  border-color: #e2bf6a;
+  background: #8ab2e0;
+  border-color: #8ab2e0;
   color: #000000;
 }
 
