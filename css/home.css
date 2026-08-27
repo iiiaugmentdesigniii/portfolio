@@ -87,23 +87,6 @@
 }
 
 
-/* =========================
-   HERO VIDEO
-   ========================= */
-
-.home-page .hero-media {
-  width: min(760px, 92vw);
-  margin: 45px auto 60px;
-}
-
-.home-page .hero-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #0d0d0d;
-  border: 1px solid #2f2f2f;
-}
-
 
 /* =========================
    CONTENT CONTAINER
