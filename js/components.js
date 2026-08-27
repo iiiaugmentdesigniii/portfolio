@@ -44,7 +44,7 @@ const header = `
     Web
   </a>
 
-  <a class="nav-link" href="/#react">
+  <a class="nav-link" href="/react/">
     React
   </a>
 
