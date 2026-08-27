@@ -99,10 +99,28 @@ function showWord() {
 
 function openAddWordForm() {
   addWordForm.style.display = "block";
+
+  addWordButton.textContent = "− CLOSE";
+
+  addWordButton.setAttribute("aria-expanded", "true");
 }
 
 function closeAddWordForm() {
   addWordForm.style.display = "none";
+
+  addWordButton.textContent = "+ ADD WORD";
+
+  addWordButton.setAttribute("aria-expanded", "false");
+}
+
+function toggleAddWordForm() {
+  const isOpen = addWordForm.style.display === "block";
+
+  if (isOpen) {
+    closeAddWordForm();
+  } else {
+    openAddWordForm();
+  }
 }
 
 async function saveNewWord() {
@@ -139,7 +157,8 @@ async function saveNewWord() {
     newDefinition.value = "";
     newHints.value = "";
 
-    addWordForm.style.display = "none";
+    // addWordForm.style.display = "none";
+    closeAddWordForm();
   } else {
     console.log("Word was not saved:", data.error);
   }
@@ -149,7 +168,7 @@ guessButton.addEventListener("click", checkGuess);
 nextButton.addEventListener("click", loadRandomWord);
 hintButton.addEventListener("click", showHint);
 showButton.addEventListener("click", showWord);
-addWordButton.addEventListener("click", openAddWordForm);
+addWordButton.addEventListener("click", toggleAddWordForm);
 cancelWordButton.addEventListener("click", closeAddWordForm);
 saveWordButton.addEventListener("click", saveNewWord);
 
