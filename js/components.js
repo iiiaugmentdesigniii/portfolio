@@ -8,7 +8,7 @@ const header = `
      <a class="site-brand" href="/">
   <img
     class="brand-logo"
-    src="/images/photos/Logo.png"
+    src="/images/photos/LogoBlue.png"
     alt=""
   >
 
