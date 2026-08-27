@@ -354,6 +354,11 @@
 
 @media (max-width: 650px) {
 
+.home-page .hero-media {
+    width: 100%;
+    margin-top: 35px;
+  }
+
   .home-page .hero {
     min-height: auto;
   }
