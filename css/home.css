@@ -92,6 +92,23 @@
    ========================= */
 
 .home-page .hero-media {
+  width: 700px;
+  max-width: calc(100% - 32px);
+  margin: 40px auto;
+  background: #222;
+  border: 3px solid red;
+}
+
+.home-page .hero-video {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  background: #333;
+}
+
+
+
+/* .home-page .hero-media {
   width: min(760px, 92vw);
   margin: 45px auto 0;
 }
@@ -103,7 +120,7 @@
   border: 1px solid #2f2f2f;
   background: #0d0d0d;
   object-fit: cover;
-}
+} */
 
 .home-page .hero-art {
   position: relative;
