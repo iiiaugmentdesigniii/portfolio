@@ -40,7 +40,7 @@ const header = `
     QA
   </a>
 
-  <a class="nav-link" href="/#web">
+  <a class="nav-link" href="/web/">
     Web
   </a>
 
