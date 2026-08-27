@@ -276,14 +276,22 @@ input:focus-visible {
     background: #151515;
   }
 
-  .nav-contact {
-    display: block;
-    margin-top: 6px;
-    padding: 10px 12px;
+ .nav-contact {
+  padding: 9px 18px;
+  border: 1px solid #d4ad54;
+  color: #d4ad54;
+  font-size: 14px;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
 
-    text-align: right;
-    border: 1px solid #555555;
-  }
+.nav-contact:hover,
+.nav-contact:focus {
+  background: #d4ad54;
+  color: #000000;
+}
 
   /* Current page */
   .nav-link.active {
