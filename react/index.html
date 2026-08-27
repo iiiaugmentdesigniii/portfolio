@@ -18,16 +18,35 @@
     content="React portfolio projects featuring component-based front-end development, responsive interfaces and interactive web applications."
   >
 
-  <link rel="stylesheet" href="/css/style.css?v=6">
-  <link rel="stylesheet" href="/css/react.css?v=1">
+  <!-- Shared Site CSS -->
+  <link
+    rel="stylesheet"
+    href="/css/style.css?v=7"
+  >
+
+  <!-- React Page CSS -->
+  <link
+    rel="stylesheet"
+    href="/css/react.css?v=2"
+  >
 
 </head>
 
+
 <body class="react-page">
+
+  <!-- =========================
+       SHARED HEADER
+  ========================== -->
 
   <div id="site-header"></div>
 
+
   <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
 
     <section class="react-hero">
 
@@ -51,6 +70,10 @@
     </section>
 
 
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
     <section class="react-section">
 
       <div class="react-container">
@@ -63,28 +86,168 @@
           React Development
         </h2>
 
-        <div class="react-grid">
 
-          <article class="react-card">
+        <div class="react-project-list">
 
-            <p class="project-type">
-              REACT · IN PROGRESS
-            </p>
 
-            <h3>
-              Project Name
-            </h3>
+          <!-- =========================
+               PROJECT 1
+          ========================== -->
 
-            <p>
-              Brief description of the project, what it does,
-              and what React concepts or functionality you implemented.
-            </p>
+          <article class="react-project">
 
-            <a href="#">
-              View Project →
+            <!-- Project information -->
+
+            <div class="react-project-info">
+
+              <p class="project-type">
+                REACT · FRONT-END DEVELOPMENT
+              </p>
+
+              <h3>
+                Project Name
+              </h3>
+
+              <p class="project-description">
+                A React-based front-end project demonstrating
+                component-based development, responsive layout
+                and interactive functionality.
+              </p>
+
+
+              <div class="project-tech">
+
+                <span class="project-tech-label">
+                  Built With
+                </span>
+
+                <p>
+                  React · JavaScript · CSS
+                </p>
+
+              </div>
+
+
+              <div class="project-links">
+
+                <a
+                  href="https://web3350finalv3.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Live Project →
+                </a>
+
+                <!--
+                Add your GitHub repository later if desired:
+
+                <a
+                  href="YOUR-GITHUB-REPOSITORY-URL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Code →
+                </a>
+                -->
+
+              </div>
+
+            </div>
+
+
+            <!-- Project screenshot -->
+
+            <a
+              class="react-project-preview"
+              href="https://web3350finalv3.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Project Name live website"
+            >
+
+              <img
+                src="/images/react/project1.jpg"
+                alt="Screenshot of Project Name React application"
+              >
+
             </a>
 
           </article>
+
+
+
+          <!-- =========================
+               PROJECT 2
+               Keep commented until ready
+          ========================== -->
+
+          <!--
+
+          <article class="react-project">
+
+            <div class="react-project-info">
+
+              <p class="project-type">
+                REACT · FRONT-END DEVELOPMENT
+              </p>
+
+              <h3>
+                Second Project
+              </h3>
+
+              <p class="project-description">
+                Brief description of the second React project,
+                its purpose and the functionality implemented.
+              </p>
+
+
+              <div class="project-tech">
+
+                <span class="project-tech-label">
+                  Built With
+                </span>
+
+                <p>
+                  React · JavaScript · CSS
+                </p>
+
+              </div>
+
+
+              <div class="project-links">
+
+                <a
+                  href="SECOND-PROJECT-URL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Live Project →
+                </a>
+
+              </div>
+
+            </div>
+
+
+            <a
+              class="react-project-preview"
+              href="SECOND-PROJECT-URL"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Second Project live website"
+            >
+
+              <img
+                src="/images/react/project2.jpg"
+                alt="Screenshot of Second Project React application"
+              >
+
+            </a>
+
+          </article>
+
+          -->
+
 
         </div>
 
@@ -94,9 +257,19 @@
 
   </main>
 
+
+  <!-- =========================
+       SHARED FOOTER
+  ========================== -->
+
   <div id="site-footer"></div>
 
-  <script src="/js/components.js?v=12"></script>
+
+  <!-- =========================
+       SHARED JAVASCRIPT
+  ========================== -->
+
+  <script src="/js/components.js?v=13"></script>
 
 </body>
 

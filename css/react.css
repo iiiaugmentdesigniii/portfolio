@@ -11,6 +11,11 @@
   width: 100%;
 }
 
+
+/* =========================
+   CONTAINER
+   ========================= */
+
 .react-container {
   width: calc(100% - 64px);
   max-width: 1200px;
@@ -19,40 +24,61 @@
 
 
 /* =========================
-   REACT HERO
+   HERO
    ========================= */
 
 .react-hero {
   padding: 90px 0 85px;
+
   background: #000000;
+
   border-bottom: 1px solid #1f1f1f;
 }
 
+
 .react-hero .section-label {
   margin: 0 0 18px;
+
   color: #6f9fd8;
+
   font-size: 13px;
+
   letter-spacing: 0.09em;
+
   text-transform: uppercase;
 }
 
+
 .react-hero h1 {
   max-width: 850px;
+
   margin: 0;
+
   color: #ffffff;
+
   font-size: clamp(48px, 6vw, 72px);
+
   font-weight: 400;
+
   line-height: 1.06;
+
   letter-spacing: -0.035em;
 }
 
+
 .react-intro {
   max-width: 720px;
+
   margin: 30px 0 0;
+
   padding-left: 18px;
+
   border-left: 2px solid #6f9fd8;
+
   color: #b8b8b8;
+
   font-size: 18px;
+
   line-height: 1.7;
 }
 
@@ -63,66 +89,232 @@
 
 .react-section {
   padding: 100px 0;
+
   background: #0b0b0b;
 }
 
+
 .react-section .section-label {
   margin: 0 0 14px;
+
   color: #989898;
+
   font-size: 13px;
+
   letter-spacing: 0.09em;
+
   text-transform: uppercase;
 }
 
+
 .react-section h2 {
-  margin: 0 0 48px;
+  margin: 0 0 60px;
+
+  color: #ffffff;
+
   font-size: clamp(34px, 4vw, 52px);
+
   font-weight: 400;
+
   line-height: 1.15;
 }
 
-.react-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+
+/* =========================
+   PROJECT LIST
+   ========================= */
+
+.react-project-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 100px;
 }
 
-.react-card {
-  min-height: 280px;
-  padding: 30px;
-  background: #151515;
-  border: 1px solid #2c2c2c;
+
+/* =========================
+   INDIVIDUAL PROJECT
+   ========================= */
+
+.react-project {
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.8fr)
+    minmax(0, 1.6fr);
+
+  gap: 60px;
+
+  align-items: center;
+
+  padding-bottom: 90px;
+
+  border-bottom: 1px solid #252525;
 }
+
+
+/* =========================
+   PROJECT INFORMATION
+   ========================= */
+
+.react-project-info {
+  min-width: 0;
+}
+
 
 .project-type {
-  margin: 0;
-  color: #888888;
+  margin: 0 0 20px;
+
+  color: #8e9baa;
+
   font-size: 13px;
-  letter-spacing: 0.08em;
+
+  letter-spacing: 0.09em;
+
   text-transform: uppercase;
 }
 
-.react-card h3 {
-  margin: 20px 0 14px;
+
+.react-project-info h3 {
+  margin: 0 0 18px;
+
   color: #ffffff;
-  font-size: 24px;
-  font-weight: 500;
+
+  font-size: 30px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
 }
 
-.react-card p {
-  margin: 0 0 24px;
+
+.project-description {
+  max-width: 460px;
+
+  margin: 0;
+
   color: #bcbcbc;
-  line-height: 1.65;
+
+  font-size: 17px;
+
+  line-height: 1.7;
 }
 
-.react-card a {
+
+/* =========================
+   TECHNOLOGIES
+   ========================= */
+
+.project-tech {
+  margin-top: 28px;
+}
+
+
+.project-tech-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #6f9fd8;
+
+  font-size: 12px;
+
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+}
+
+
+.project-tech p {
+  margin: 0;
+
+  color: #d0d0d0;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   PROJECT LINKS
+   ========================= */
+
+.project-links {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 24px;
+
+  margin-top: 30px;
+}
+
+
+.project-links a {
   color: #ffffff;
+
   text-decoration: none;
 }
 
-.react-card a:hover,
-.react-card a:focus {
+
+.project-links a:hover,
+.project-links a:focus {
   text-decoration: underline;
+
+  text-underline-offset: 4px;
+}
+
+
+/* =========================
+   PROJECT SCREENSHOT
+   ========================= */
+
+.react-project-preview {
+  display: block;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #111111;
+
+  border: 1px solid #2c2c2c;
+
+  text-decoration: none;
+}
+
+
+.react-project-preview img {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+
+.react-project-preview:hover img,
+.react-project-preview:focus img {
+  transform: scale(1.015);
+
+  opacity: 0.9;
+}
+
+
+/* =========================
+   KEYBOARD FOCUS
+   ========================= */
+
+.react-project-preview:focus-visible {
+  outline: 3px solid #ffffff;
+
+  outline-offset: 4px;
 }
 
 
@@ -132,8 +324,15 @@
 
 @media (max-width: 900px) {
 
-  .react-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .react-project {
+    grid-template-columns: 1fr;
+
+    gap: 36px;
+  }
+
+
+  .react-project-preview {
+    max-width: 760px;
   }
 
 }
@@ -149,20 +348,62 @@
     width: calc(100% - 32px);
   }
 
+
   .react-hero {
     padding: 70px 0 60px;
   }
+
+
+  .react-hero h1 {
+    font-size: clamp(42px, 11vw, 56px);
+  }
+
+
+  .react-intro {
+    font-size: 16px;
+  }
+
 
   .react-section {
     padding: 70px 0;
   }
 
-  .react-grid {
-    grid-template-columns: 1fr;
+
+  .react-section h2 {
+    margin-bottom: 42px;
+
+    font-size: 36px;
   }
 
-  .react-card {
-    padding: 24px;
+
+  .react-project-list {
+    gap: 70px;
+  }
+
+
+  .react-project {
+    gap: 28px;
+
+    padding-bottom: 65px;
+  }
+
+
+  .react-project-info h3 {
+    font-size: 26px;
+  }
+
+
+  .project-description {
+    font-size: 16px;
+  }
+
+
+  .project-links {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
   }
 
 }
