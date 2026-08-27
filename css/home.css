@@ -88,100 +88,20 @@
 
 
 /* =========================
-   ABSTRACT HERO ART
+   HERO VIDEO
    ========================= */
 
 .home-page .hero-media {
-  width: 700px;
-  max-width: calc(100% - 32px);
-  margin: 40px auto;
-  background: #222;
-  border: 3px solid red;
-}
-
-.home-page .hero-video {
-  display: block;
-  width: 100%;
-  min-height: 300px;
-  background: #333;
-}
-
-
-
-/* .home-page .hero-media {
   width: min(760px, 92vw);
-  margin: 45px auto 0;
+  margin: 45px auto 60px;
 }
 
 .home-page .hero-video {
   display: block;
   width: 100%;
   height: auto;
-  border: 1px solid #2f2f2f;
   background: #0d0d0d;
-  object-fit: cover;
-} */
-
-.home-page .hero-art {
-  position: relative;
-  width: min(620px, 90vw);
-  height: 300px;
-  margin: 25px auto 0;
-}
-
-.home-page .art-shape {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 470px;
-  height: 210px;
-  border: 1px solid rgba(125, 185, 255, 0.42);
-  border-radius:
-    62% 38% 58% 42% /
-    43% 58% 42% 57%;
-  background:
-    radial-gradient(
-      circle at 35% 40%,
-      rgba(93, 173, 255, 0.45),
-      rgba(15, 65, 125, 0.25) 35%,
-      rgba(0, 0, 0, 0) 70%
-    );
-  box-shadow:
-    inset 0 0 90px rgba(50, 130, 220, 0.25),
-    0 0 70px rgba(30, 95, 175, 0.18);
-}
-
-.home-page .art-shape-one {
-  transform:
-    translate(-52%, -50%)
-    rotate(-12deg)
-    skewX(-9deg);
-}
-
-.home-page .art-shape-two {
-  width: 400px;
-  height: 195px;
-  opacity: 0.6;
-  transform:
-    translate(-42%, -44%)
-    rotate(18deg)
-    skewX(14deg);
-}
-
-.home-page .art-glow {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 330px;
-  height: 170px;
-  transform: translate(-50%, -50%);
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(75, 155, 240, 0.35),
-      rgba(0, 0, 0, 0) 72%
-    );
-  filter: blur(28px);
+  border: 1px solid #2f2f2f;
 }
 
 
@@ -371,15 +291,6 @@
 
 @media (max-width: 650px) {
 
-.home-page .hero-media {
-    width: 100%;
-    margin-top: 35px;
-  }
-
-  .home-page .hero {
-    min-height: auto;
-  }
-
   .home-page .hero-inner {
     width: calc(100% - 32px);
     padding: 50px 0 45px;
@@ -400,19 +311,9 @@
     font-size: 16px;
   }
 
-  .home-page .hero-art {
+  .home-page .hero-media {
     width: 100%;
-    height: 230px;
-  }
-
-  .home-page .art-shape {
-    width: 320px;
-    height: 170px;
-  }
-
-  .home-page .art-shape-two {
-    width: 285px;
-    height: 155px;
+    margin: 35px auto 20px;
   }
 
   .home-page .content-container {
@@ -433,7 +334,6 @@
     font-size: 36px;
   }
 
-  /* One full-width card per row */
   .home-page .work-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -441,7 +341,6 @@
 
   .home-page .work-card {
     width: 100%;
-    min-width: 0;
     min-height: auto;
     padding: 26px 24px;
   }
