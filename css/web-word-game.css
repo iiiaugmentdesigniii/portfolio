@@ -1,0 +1,348 @@
+/* =========================
+   WORD GAME PAGE
+   ========================= */
+
+.word-game-page {
+  background: #000000;
+  color: #e6e6e6;
+}
+
+
+/* =========================
+   MAIN LAYOUT
+   ========================= */
+
+.word-game-page main {
+  width: 100%;
+  min-height: calc(100vh - 180px);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 70px 20px 90px;
+
+  box-sizing: border-box;
+
+  background: #000000;
+}
+
+
+/* =========================
+   GAME PANEL
+   ========================= */
+
+.word-game-page .game {
+  width: min(760px, 100%);
+
+  padding: 40px;
+
+  background: #0d0d0d;
+
+  border: 1px solid #2c2c2c;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   TOP BAR
+   ========================= */
+
+.word-game-page .top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 32px;
+
+  color: #9d9d9d;
+
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   WORD CARD
+   ========================= */
+
+.word-game-page .word-card {
+  background: transparent;
+  color: #e6e6e6;
+}
+
+
+.word-game-page #definition {
+  max-width: 680px;
+
+  margin: 0 0 36px;
+
+  color: #ffffff;
+
+  font-size: clamp(26px, 4vw, 36px);
+
+  font-weight: 400;
+
+  line-height: 1.35;
+}
+
+
+/* =========================
+   RESULT
+   ========================= */
+
+.word-game-page #result {
+  min-height: 28px;
+
+  margin-bottom: 14px;
+
+  color: #b8b8b8;
+
+  font-size: 18px;
+}
+
+
+/* =========================
+   ANSWER ROW
+   ========================= */
+
+.word-game-page .answer-row {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+
+.word-game-page .game input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 13px 16px;
+
+  background: #ffffff;
+  color: #111111;
+
+  border: 1px solid #767676;
+
+  border-radius: 0;
+
+  font-size: 18px;
+}
+
+
+.word-game-page .game input::placeholder {
+  color: #666666;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.word-game-page button {
+  border-radius: 0;
+
+  font: inherit;
+}
+
+
+.word-game-page #hintButton,
+.word-game-page #showButton,
+.word-game-page #addWordButton,
+.word-game-page #guessButton,
+.word-game-page #nextButton,
+.word-game-page #saveWordButton,
+.word-game-page #cancelWordButton {
+
+  padding: 12px 18px;
+
+  background: #151515;
+
+  color: #ffffff;
+
+  border: 1px solid #555555;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.word-game-page #hintButton:hover,
+.word-game-page #hintButton:focus,
+.word-game-page #showButton:hover,
+.word-game-page #showButton:focus,
+.word-game-page #addWordButton:hover,
+.word-game-page #addWordButton:focus,
+.word-game-page #guessButton:hover,
+.word-game-page #guessButton:focus,
+.word-game-page #nextButton:hover,
+.word-game-page #nextButton:focus,
+.word-game-page #saveWordButton:hover,
+.word-game-page #saveWordButton:focus,
+.word-game-page #cancelWordButton:hover,
+.word-game-page #cancelWordButton:focus {
+
+  background: #222222;
+
+  border-color: #6f9fd8;
+}
+
+
+/* Primary action */
+
+.word-game-page #guessButton {
+  background: #6f9fd8;
+
+  border-color: #6f9fd8;
+
+  color: #080808;
+}
+
+
+.word-game-page #guessButton:hover,
+.word-game-page #guessButton:focus {
+  background: #8ab2e0;
+
+  border-color: #8ab2e0;
+
+  color: #000000;
+}
+
+
+/* =========================
+   HINT
+   ========================= */
+
+.word-game-page #hintText {
+  min-height: 28px;
+
+  margin: 12px 0 18px;
+
+  color: #aeb9c6;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   BOTTOM BUTTON ROW
+   ========================= */
+
+.word-game-page .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+
+/* =========================
+   ADD WORD FORM
+   ========================= */
+
+.word-game-page .add-word-form {
+  display: none;
+
+  margin-top: 36px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid #2c2c2c;
+}
+
+
+.word-game-page .add-word-form h2 {
+  margin: 0 0 22px;
+
+  color: #ffffff;
+
+  font-size: 28px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+.word-game-page .add-word-form input {
+  display: block;
+
+  width: 100%;
+
+  max-width: none;
+
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   ACCESSIBILITY
+   ========================= */
+
+.word-game-page button:focus-visible,
+.word-game-page input:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+  .word-game-page main {
+    padding: 40px 16px 70px;
+  }
+
+
+  .word-game-page .game {
+    width: 100%;
+
+    padding: 26px 20px;
+  }
+
+
+  .word-game-page #definition {
+    font-size: 26px;
+  }
+
+
+  .word-game-page .answer-row {
+    flex-direction: column;
+  }
+
+
+  .word-game-page .game input {
+    width: 100%;
+  }
+
+
+  .word-game-page #hintButton,
+  .word-game-page #showButton {
+    width: 100%;
+  }
+
+
+  .word-game-page .buttons {
+    flex-direction: column;
+  }
+
+
+  .word-game-page .buttons button {
+    width: 100%;
+  }
+
+}
