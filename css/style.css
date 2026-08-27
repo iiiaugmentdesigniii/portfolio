@@ -225,15 +225,12 @@ input:focus-visible {
 }
 
 
-/* =========================
-   SHARED NAVIGATION MOBILE
-   ========================= */
-
 @media (max-width: 760px) {
 
   .nav-container {
     width: calc(100% - 32px);
     flex-wrap: wrap;
+    position: relative;
   }
 
   .nav-toggle {
@@ -242,19 +239,23 @@ input:focus-visible {
 
   .nav-menu {
     display: none;
-    width: 100%;
-    margin-top: 14px;
-    padding: 20px;
+
+    /* Compact dropdown */
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 190px;
+
+    padding: 12px;
 
     flex-direction: column;
-    align-items: flex-end;
-    gap: 18px;
+    align-items: stretch;
+    gap: 2px;
 
-    text-align: right;
-
-    /* Subtle indication that menu is open */
     background: #0d0d0d;
     border: 1px solid #292929;
+
+    z-index: 200;
   }
 
   .nav-menu.is-open {
@@ -263,7 +264,25 @@ input:focus-visible {
 
   .nav-link {
     position: relative;
-    padding-bottom: 4px;
+    display: block;
+    padding: 10px 12px;
+
+    text-align: right;
+    font-size: 16px;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    background: #151515;
+  }
+
+  .nav-contact {
+    display: block;
+    margin-top: 6px;
+    padding: 10px 12px;
+
+    text-align: right;
+    border: 1px solid #555555;
   }
 
   /* Current page */
@@ -274,10 +293,10 @@ input:focus-visible {
   .nav-link.active::after {
     content: "";
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 12px;
+    bottom: 5px;
 
-    width: 100%;
+    width: 28px;
     height: 1px;
 
     background: #d4ad54;
