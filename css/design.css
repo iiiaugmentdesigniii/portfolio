@@ -1,0 +1,290 @@
+/* =========================
+   DESIGN PAGE
+   ========================= */
+
+.design-page {
+  background: #000000;
+  color: #ffffff;
+}
+
+.design-page main {
+  width: 100%;
+}
+
+/* =========================
+   CONTAINER
+   ========================= */
+
+.design-container {
+  width: calc(100% - 64px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.design-hero {
+  padding: 90px 0 85px;
+  background: #000000;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.design-hero .section-label {
+  margin: 0 0 18px;
+  color: #6f9fd8;
+  font-size: 13px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.design-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+}
+
+.design-intro {
+  max-width: 760px;
+  margin: 30px 0 0;
+  padding-left: 18px;
+  border-left: 2px solid #6f9fd8;
+  color: #b8b8b8;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =========================
+   PROJECT SECTION
+   ========================= */
+
+.design-section {
+  padding: 100px 0;
+  background: #0b0b0b;
+}
+
+.design-section .section-label {
+  margin: 0 0 14px;
+  color: #989898;
+  font-size: 13px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.design-section h2 {
+  margin: 0 0 60px;
+  color: #ffffff;
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+/* =========================
+   PROJECT LIST
+   ========================= */
+
+.design-project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* =========================
+   INDIVIDUAL PROJECT
+   ========================= */
+
+.design-project {
+  display: grid;
+  grid-template-columns:
+    minmax(280px, 0.8fr)
+    minmax(0, 1.6fr);
+  gap: 60px;
+  align-items: center;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #252525;
+}
+
+/* =========================
+   PROJECT INFORMATION
+   ========================= */
+
+.design-project-info {
+  min-width: 0;
+}
+
+.project-type {
+  margin: 0 0 20px;
+  color: #8e9baa;
+  font-size: 13px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.design-project-info h3 {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.project-description {
+  max-width: 460px;
+  margin: 0;
+  color: #bcbcbc;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* =========================
+   FOCUS AREAS
+   ========================= */
+
+.project-tech {
+  margin-top: 28px;
+}
+
+.project-tech-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #6f9fd8;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.project-tech p {
+  margin: 0;
+  color: #d0d0d0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =========================
+   PROJECT LINKS
+   ========================= */
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.project-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.project-links a:hover,
+.project-links a:focus {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* =========================
+   PROJECT IMAGE
+   ========================= */
+
+.design-project-preview {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: #111111;
+  border: 1px solid #2c2c2c;
+  text-decoration: none;
+}
+
+.design-project-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.design-project-preview:hover img,
+.design-project-preview:focus img {
+  transform: scale(1.015);
+  opacity: 0.9;
+}
+
+.design-project-preview:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+  .design-project {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .design-project-preview {
+    max-width: 760px;
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 650px) {
+  .design-container {
+    width: calc(100% - 32px);
+  }
+
+  .design-hero {
+    padding: 70px 0 60px;
+  }
+
+  .design-hero h1 {
+    font-size: clamp(42px, 11vw, 56px);
+  }
+
+  .design-intro {
+    font-size: 16px;
+  }
+
+  .design-section {
+    padding: 70px 0;
+  }
+
+  .design-section h2 {
+    margin-bottom: 42px;
+    font-size: 36px;
+  }
+
+  .design-project-list {
+    gap: 70px;
+  }
+
+  .design-project {
+    gap: 28px;
+    padding-bottom: 65px;
+  }
+
+  .design-project-info h3 {
+    font-size: 26px;
+  }
+
+  .project-description {
+    font-size: 16px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
