@@ -48,7 +48,7 @@ const header = `
     React
   </a>
 
-  <a class="nav-link" href="/#design">
+  <a class="nav-link" href="/design/">
     Design
   </a>
 
