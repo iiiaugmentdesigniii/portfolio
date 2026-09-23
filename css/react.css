@@ -297,28 +297,7 @@
     transform 0.25s ease,
     opacity 0.25s ease;
 }
-/* =========================
-   LEARNINMIND LIVE PREVIEW
-   ========================= */
 
-.learninmind-preview {
-  height: 620px;
-  overflow: hidden;
-}
-
-.learninmind-preview iframe {
-  display: block;
-
-  width: 125%;
-  height: 775px;
-
-  border: 0;
-
-  background: #0b1220;
-
-  transform: scale(0.8);
-  transform-origin: top left;
-}
 
 .react-project-preview:hover img,
 .react-project-preview:focus img {
